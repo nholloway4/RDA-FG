@@ -65,14 +65,7 @@ function removeExtraWord() {
     
     else {
      
-        if ( width > 480 ) {
-            
-            $(".page-heading-title h2").each(function() {
-                var text = $(this).text();
-                text = text.replace("Contact Us", "I'm BIG");
-                $(this).text(text);
-            });
-        }
+        //
     }
 }
 

@@ -58,7 +58,7 @@ function removeExtraWord() {
 
     var width = screen.width;
     
-    if ( screen.width < 480 ){
+    if ( width < 480 ){
         
         $(".page-heading-title h2").each(function() {
             var text = $(this).text();
@@ -69,11 +69,7 @@ function removeExtraWord() {
     
     else {
      
-        $(".page-heading-title h2").each(function() {
-            var text = $(this).text();
-            text = text.replace("Contact Us", "I'm BIG");
-            $(this).text(text);
-        });
+        //
     }
 }
 
