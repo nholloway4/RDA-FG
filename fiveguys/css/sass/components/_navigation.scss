@@ -79,12 +79,11 @@
 }*/    
 
 .drop-menu {
-
     //margin-top: $menu-nav-margin-top;
     //margin-left: $menu-nav-margin-left;
     margin: $menu-nav-margin;
     
-    ul {
+    ul {       
         
         li {
             //float: left;
@@ -107,6 +106,15 @@
             }
         }
     }
+}
+
+.newul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 0;
+        margin: 0;
 }
 
 .drop-menu-children {
@@ -332,10 +340,52 @@
     }
     
     .drop-menu {
-     
         margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 0px;
+
+        ul {       
+
+            li {
+                //float: left;
+                //width: 33.33333333%; 
+                text-align: $align-left;
+                padding-bottom: $padding-md;
+
+
+                a {
+                    font-family: $helvetica-black;
+                    color: $gray-base;
+                    font-size: $font-size-24;
+                    font-weight: $font-bold;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+
+                .heading-title {
+
+                }
+            }
+        }
     }
+
+    .drop-menu-children {
+
+        ul {
+
+            li {
+
+                padding-bottom: 0;
+
+                a {
+                    font-family: $font-family;
+                    color: $gray-base;
+                    font-size: $font-size-14;
+                    font-weight: $font-normal;
+                    text-transform: none;
+                }
+            }
+        }        
+    }    
     
     .logo {
         
@@ -374,10 +424,44 @@
     }
     
     .social {
-        display: flex;
-        flex-direction: inherit;
-        justify-content: space-between;
-    }    
+        display: none;
+        //flex-direction: inherit;
+        //justify-content: space-between;
+    }  
+    
+    .sitemap {
+        
+        display: none;
+    }
+    
+    .secondary-menu-items {
+
+        .items-left {
+
+                display: flex;
+                color: $gray;   
+                font-size: $font-size-14;                    
+
+            .active-lang {
+
+                color: $gray-base;
+                font-size: $font-size-14;         
+            }
+        }
+        
+        .items-right {
+
+                display: block;
+                color: $gray;   
+                font-size: $font-size-14; 
+                float: $align-left;
+        }        
+    }
+    
+    #c-menu--slide-top {
+     
+        padding-bottom: $padding-xl;
+    }
 }
 
 

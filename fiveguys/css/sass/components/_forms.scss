@@ -40,3 +40,31 @@
     position: relative;
     right: 40px;    
 }
+
+
+@media (max-width: $breakpoint-xs) {
+    
+    .fg-select {
+
+        font-family: $helvetica-neue;
+        font-size: $font-size-14;    
+        font-weight: $font-bold;
+        padding: $padding-sm;
+        height: inherit; 
+        width: 55%;
+        position: inherit;
+        margin: 0;
+        //bottom: 15px;  
+        //background-position: 205px -7px;
+
+        &:after {
+
+            font-family: 'FontAwesome';
+        }
+    }
+    
+    .absolute {
+        
+        display: none;
+    }
+}

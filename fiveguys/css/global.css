@@ -1404,7 +1404,7 @@ body.has-active-menu {
    }
 }*/
 .drop-menu {
-  margin: 85px 100px 40px 145px;
+  margin: 85px 10% 5% 10%;
 }
 .drop-menu ul li {
   text-align: left;
@@ -1417,6 +1417,15 @@ body.has-active-menu {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.newul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  margin: 0;
 }
 
 .drop-menu-children ul li {
@@ -1597,7 +1606,30 @@ body.has-active-menu {
 
   .drop-menu {
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .drop-menu ul li {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .drop-menu ul li a {
+    font-family: "Helvetica Black";
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .drop-menu-children ul li {
+    padding-bottom: 0;
+  }
+  .drop-menu-children ul li a {
+    font-family: "Proxima-Nova-Regular";
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
   }
 
   .logo {
@@ -1628,9 +1660,31 @@ body.has-active-menu {
   }
 
   .social {
+    display: none;
+  }
+
+  .sitemap {
+    display: none;
+  }
+
+  .secondary-menu-items .items-left {
     display: flex;
-    flex-direction: inherit;
-    justify-content: space-between;
+    color: #555555;
+    font-size: 14px;
+  }
+  .secondary-menu-items .items-left .active-lang {
+    color: #000;
+    font-size: 14px;
+  }
+  .secondary-menu-items .items-right {
+    display: block;
+    color: #555555;
+    font-size: 14px;
+    float: left;
+  }
+
+  #c-menu--slide-top {
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 480px) {
@@ -1989,6 +2043,25 @@ footer .social-media-icons ul li a {
   right: 40px;
 }
 
+@media (max-width: 480px) {
+  .fg-select {
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    height: inherit;
+    width: 55%;
+    position: inherit;
+    margin: 0;
+  }
+  .fg-select:after {
+    font-family: 'FontAwesome';
+  }
+
+  .absolute {
+    display: none;
+  }
+}
 .table thead tr td {
   padding: 12px 20px;
   vertical-align: middle;
