@@ -1,0 +1,207 @@
+//HERO
+
+.hero-image-container {
+ 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: auto;
+    margin-top: $navbar-height;
+
+    img {
+        
+        width:100%;
+	    height:auto;
+    }
+    
+    .hero-main {
+        
+        background-image: url("../images/five-guys-hero.png");
+        background-size: cover;
+        background-position: $align-center;
+        flex: 2.5;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center;        
+        
+        .hero-content-wrapper {
+            //height: 850px;
+            //background: $primary-dark;            
+
+            .hero-text-light {
+
+                color: $white;
+                font-weight: $font-light;
+                font-size: $font-size-50;
+
+            }
+
+            .hero-text-bold {
+
+                color: $white;
+                font-family: $helvetica-black;
+                font-size: $font-size-70;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .hero-secondary {
+        
+        flex-direction: column;
+        flex: 1;
+    } 
+    
+    
+    //PLACEHOLDERS  
+    
+    .cta-join-crew {
+        background-image: url("../images/fg-carousel-img-1.png");
+        background-size: cover;
+        background-position: bottom;        
+        //background: $gray-darker;
+        height: 550px;
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-end;
+        padding: $padding-xl;
+        
+        .hero-secondary-text-bold {
+
+            color: $white;
+            font-family: $helvetica-black;            
+            font-size: $font-size-24;
+            text-transform: uppercase;
+            
+        }
+    }
+    
+    .cta-mobile-wrapper {
+        background-image: url("../images/fg-stainless-steel.png"); 
+        background-size: cover;
+        background-position: bottom;         
+        //background: $gray-dark;
+        height: 300px;
+        padding: $padding-xl;
+        display: flex;
+        
+        .cta-mobile-download {
+         
+            line-height: 40%;
+        }
+        
+        .cta-app {
+         
+            line-height: 100%;
+            padding-top: $padding-xl;
+            padding-bottom: $padding-lg;
+        }        
+        
+        .hero-secondary-text-light {
+
+            color: $white;
+            font-size: $font-size-28;
+            padding: 0px 20px 0 0;
+            flex: 1;
+            
+            .uppercase {
+                
+                color: $white;
+                font-family: $helvetica;
+                font-weight: $font-semibold;
+                font-size: $font-size-14;
+                text-transform: uppercase;
+            }
+        }
+        
+        .phone-wrap {
+            
+            flex: 1;
+            
+            .mobile-phone {
+                background-image: url("../images/fg-mobile-phone.png") ; 
+                background-repeat: no-repeat;                
+                background-position: top;                  
+                width: 240px;
+                height: 270px;
+
+            } 
+        }
+    }    
+}
+
+
+//MEDIA QUERIES
+
+@media (max-width: $breakpoint-xs) {
+    
+    body {
+        height: $navbar-height-mobile;
+        margin-top: $navbar-height-mobile;        
+    }
+    
+    .hero-image-container {
+        
+        margin-top: $navbar-height-mobile;
+        flex-direction: column;
+        
+        .hero-main {
+
+            background-position: $align-center;
+            flex: 2.5;
+            display: flex; 
+            height: 425px;
+            min-height: 425px;
+
+            .hero-content-wrapper {        
+
+                .hero-text-light {
+
+                    font-size: $font-size-24;
+                    
+                }
+
+                .hero-text-bold {
+
+                    color: $white;
+                    font-family: $helvetica-black;
+                    font-size: $font-size-28;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        .cta-join-crew {
+            
+            height: 375px;    
+        }
+        
+        .cta-mobile-wrapper {
+
+            height: auto;
+            display: block;
+            padding: 30px 30px 0;
+
+            .hero-secondary-text-light {
+
+                padding: 0px;
+                flex: initial;
+                text-align: $align-center;            
+                
+            }
+            
+            .phone-wrap {
+
+                flex: 1;
+
+                .mobile-phone {                
+                    width: 100%;
+                    height: 250px;
+                } 
+            }            
+        }        
+    }  
+}

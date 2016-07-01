@@ -1,0 +1,42 @@
+//FORMS
+
+.fg-form {
+    
+    font-family: $helvetica-neue;
+    border-radius: 0;
+    padding: $padding-lg;
+    height: inherit;
+    font-weight: $font-bold;
+    font-size: $font-size-18;
+    margin-bottom: $margin-lg;
+}
+
+.fg-select {
+    
+    font-family: $helvetica-neue;
+    font-size: $font-size-18;    
+    font-weight: $font-bold;
+    border-radius: 0;
+    padding: $padding-lg;
+    height: inherit; 
+    width: 50%;
+    position: relative;
+    bottom: 15px;  
+    background-position: 205px -7px;
+    
+    &:after {
+     
+        font-family: 'FontAwesome';
+    }
+}
+
+
+.absolute {
+    
+    position: absolute;
+}
+
+.chevron-position {
+    position: relative;
+    right: 40px;    
+}

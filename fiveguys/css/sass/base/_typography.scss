@@ -1,0 +1,51 @@
+/*==================================================================
+    TYPOGRAPHY 
+===================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+
+@font-face {
+   font-family: "Proxima-Nova-Regular";
+   src:url("../fonts/proximanova-regular-webfont.eot");
+   src:url("../fonts/proximanova-regular-webfontd41d.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/proximanova-regular-webfont.woff") format("woff"),
+      url("../fonts/proximanova-regular-webfont.ttf") format("truetype"),
+      url("../fonts/proximanova-regular-webfont.svg#Proxima-Nova-Regular") format("svg");
+}
+
+@font-face {
+   font-family: "Proxima-Nova-Bold";
+   src:url("../fonts/proximanova-bold-webfont.eot");
+   src:url("../fonts/proximanova-bold-webfontd41d.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/proximanova-bold-webfont.woff") format("woff"),
+      url("../fonts/proximanova-bold-webfont.ttf") format("truetype"),
+      url("../fonts/proximanova-bold-webfont.svg#Proxima-Nova-Bold") format("svg");
+}
+
+@font-face {
+    font-family: 'Helvetica Black';
+    src: url('../fonts/HelveticaBlack.eot');
+    src: url('../fonts/HelveticaBlack.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaBlack.woff2') format('woff2'),
+         url('../fonts/HelveticaBlack.woff') format('woff'),
+         url('../fonts/HelveticaBlack.ttf') format('truetype'),
+         url('../fonts/HelveticaBlack.svg#HelveticaBlack') format('svg');
+}
+
+
+.type--smaallcaps {
+    font-size: calc(18px * .75);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: inherit;
+    letter-spacing: calc(18px/18);
+}
+
+.text-size-small {
+    
+    font-size: $font-size-12;
+}
+
+.text-muted {
+    
+    color: $gray-light;
+}

@@ -1,0 +1,38 @@
+@mixin default-text-color ($color) {
+    color: $color;
+}
+
+@mixin box-shadow-2($args1, $args2) {
+    -webkit-box-shadow: $args1, $args2;
+    -moz-box-shadow: $args1, $args2;
+    box-shadow: $args1, $args2;
+}
+
+@mixin word-wrap() {
+  word-break:     break-word; 
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//Transitions - Easing
+@mixin custTransition($timing, $easing) {
+    -webkit-transition: all $timing $easing; 
+   -moz-transition: all $timing $easing;   
+     -o-transition: all $timing $easing; 
+        transition: all $timing $easing; /* linear */
+}
+
+@mixin custEasing($timing, $easing) {
+    -webkit-transition: all $timing $easing; 
+   -moz-transition: all $timing $easing;   
+     -o-transition: all $timing $easing; 
+        transition: all $timing $easing; /* linear */
+}
+

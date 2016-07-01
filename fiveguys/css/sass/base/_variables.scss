@@ -1,0 +1,120 @@
+//============================================\\
+//========== COLOR SWATCHES OPTIONS ==========\\
+//============================================\\
+
+// COLOR Options
+
+//Primary
+$primary:                   #cf1e27;
+$primary-light:             lighten($primary, 8.5%);
+$primary-dark:              darken($primary, 8.5%);
+$primary-darker:            darken($primary, 15.5%);
+$primary-2:                 #d87033;
+$primary-2-light:           lighten($primary-2, 13.5%) !default; 
+$primary-2-lighter:         lighten($primary-2, 20%) !default; 
+
+//Base 
+$white:                     #fff !default;
+$gray-base:                 #000 !default;
+$gray-darker:               lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:                 lighten($gray-base, 20%) !default;   // #333
+$gray:                      lighten($gray-base, 33.5%) !default; // #555
+$gray-light:                lighten($gray-base, 75%) !default; // #  
+$gray-lighter:              lighten($gray-base, 93.5%) !default; // #eee
+
+//FONT Options 
+
+$font-family:      'Proxima-Nova-Regular';
+$font-family-bold: 'Proxima-Nova-Regular-Bold';
+
+//$font-family: 'Helvetica Neue';
+$helvetica: 'Helvetica';
+$helvetica-neue: 'Helvetica Neue';
+$helvetica-black: 'Helvetica Black';
+
+
+$font-light:        300;
+$font-normal:       400;
+$font-semibold:     600;
+$font-bold:         700;
+$font-ultra-bold:   900;
+
+//REM Sizes
+
+$h1: 4rem;
+$h2: 2.2rem;
+$h3: 1.8rem;
+$h4: 1.5rem;
+$h5: 1.2rem;
+$h6: 1.1rem;
+    
+$font-size-12:	12px;
+$font-size-14:	14px;
+$font-size-16:	16px;
+$font-size-17:  17px;
+$font-size-18:	18px;
+$font-size-20:	20px;
+$font-size-24:	24px;
+$font-size-28:	28px;
+$font-size-32:	32px;
+$font-size-36:	36px;
+$font-size-40:	40px;
+$font-size-45:	45px;
+$font-size-50:	50px;
+$font-size-70:	70px;
+
+//============================================\\
+//============= AUGMENT OPTIONS ==============\\
+//============================================\\
+
+$padding-sm: 5px;
+$padding-md: 10px;
+$padding-lg: 15px;
+$padding-xl: 30px;
+
+$margin-sm: 5px;
+$margin-md: 10px;
+$margin-lg: 15px;
+$margin-xl: 30px;
+
+$nopadmargin: 0px;
+
+//EM
+$btn-cta-padding: 1.25em 2em;
+
+//============================================\\
+//============= ALIGNMENT OPTIONS ============\\
+//============================================\\
+
+$align-left:    left;
+$align-center:  center;
+$align-right:   right;
+
+//============================================\\
+//============= MOBILE OPTIONS ===============\\
+//============================================\\
+
+$breakpoint-xs:	            480px; // uses max-width for mobile
+$breakpoint-sm:             640px;
+$breakpoint-xslandscape:    668px;
+$breakpoint-md:	            940px;
+$breakpoint-lg:	            1280px;
+$breakpoint-smplus:	        768px;
+
+//============================================\\
+//============= EASING OPTIONS ===============\\
+//============================================\\
+
+$easeInNormal   : ease-in;
+$easeOutNormal  : ease-out;
+
+// Quart
+$easeInQuart    : cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$easeOutQuart   : cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeInOutQuart : cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+// Quint
+$easeInQuint    : cubic-bezier(0.755, 0.050, 0.855, 0.060);
+$easeOutQuint   : cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$easeInOutQuint : cubic-bezier(0.860, 0.000, 0.070, 1.000);
+

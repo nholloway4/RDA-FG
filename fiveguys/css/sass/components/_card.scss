@@ -1,0 +1,21 @@
+//CARD
+
+.card {
+    background: $white;
+    .card-title {
+        font-weight: $font-normal;
+    }
+    .card-action {
+        a {
+            color: $primary;
+            
+            // Modifiers
+            
+            &:hover {
+                color: $primary-dark;
+            }                
+        }
+    }
+}
+
+

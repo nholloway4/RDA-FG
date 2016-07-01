@@ -1,0 +1,2005 @@
+/*==================================================================
+    BASE 
+===================================================================*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* 1 */
+html input[type="button"],
+button,
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a, button {
+  -webkit-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  /* linear */
+}
+a:hover, button:hover {
+  -webkit-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
+  /* linear */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-container {
+  margin: 0 auto 10px;
+  max-width: 960px;
+}
+
+.module-padding {
+  padding: 28px 50px 50px;
+}
+
+.p-t-sm {
+  padding-top: 5px;
+}
+
+.p-t-md {
+  padding-top: 10px;
+}
+
+.p-t-lg {
+  padding-top: 15px;
+}
+
+.p-r-sm {
+  padding-right: 5px;
+}
+
+.p-r-md {
+  padding-right: 10px;
+}
+
+.p-r-lg {
+  padding-right: 15px;
+}
+
+.p-b-sm {
+  padding-bottom: 5px;
+}
+
+.p-b-md {
+  padding-bottom: 10px;
+}
+
+.p-b-lg {
+  padding-bottom: 15px;
+}
+
+.p-b-xl {
+  padding-bottom: 30px;
+}
+
+.p-l-sm {
+  padding-left: 5px;
+}
+
+.p-l-md {
+  padding-left: 10px;
+}
+
+.p-l-lg {
+  padding-left: 15px;
+}
+
+.m-t-sm {
+  margin-top: 5px;
+}
+
+.m-t-md {
+  margin-top: 10px;
+}
+
+.m-t-lg {
+  margin-top: 15px;
+}
+
+.m-t-xl {
+  margin-top: 30px;
+}
+
+.m-r-sm {
+  margin-right: 5px;
+}
+
+.m-r-md {
+  margin-right: 10px;
+}
+
+.m-r-lg {
+  margin-right: 15px;
+}
+
+.m-b-sm {
+  margin-bottom: 5px;
+}
+
+.m-b-md {
+  margin-bottom: 10px;
+}
+
+.m-b-lg {
+  margin-bottom: 15px;
+}
+
+.m-b-xl {
+  margin-bottom: 30px;
+}
+
+.m-l-sm {
+  margin-left: 5px;
+}
+
+.m-l-md {
+  margin-left: 10px;
+}
+
+.m-l-lg {
+  margin-left: 15px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.page-list ul li:first-child {
+  color: #ecc35d;
+  font-family: "Helvetica Black";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.page-list ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.accordion-wrapper {
+  text-align: left;
+}
+
+.accordion-btn {
+  display: block;
+  position: relative;
+  margin-bottom: -1px;
+  border-radius: 0;
+  color: #555555;
+  border: 1px solid #bfbfbf;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accordion-btn:before {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 18px;
+  z-index: 2;
+  margin-top: -13px;
+  font-family: FontAwesome;
+  content: "\f078";
+  color: #555555;
+}
+
+.accordion-content {
+  font-size: 18px;
+  padding: 25px 150px 25px 15px;
+  border-left: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+.accordion-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.accordion-content p {
+  font-size: 18px;
+}
+
+.accordion-active {
+  border-bottom: transparent;
+}
+.accordion-active:before {
+  font-family: FontAwesome;
+  content: "\f077";
+}
+
+@media (max-width: 480px) {
+  .accordion-btn {
+    font-size: 14px;
+    padding-right: 40px;
+  }
+}
+/*==================================================================
+    TYPOGRAPHY 
+===================================================================*/
+@font-face {
+  font-family: "Proxima-Nova-Regular";
+  src: url("../fonts/proximanova-regular-webfont.eot");
+  src: url("../fonts/proximanova-regular-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular-webfont.svg#Proxima-Nova-Regular") format("svg");
+}
+@font-face {
+  font-family: "Proxima-Nova-Bold";
+  src: url("../fonts/proximanova-bold-webfont.eot");
+  src: url("../fonts/proximanova-bold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#Proxima-Nova-Bold") format("svg");
+}
+@font-face {
+  font-family: 'Helvetica Black';
+  src: url("../fonts/HelveticaBlack.eot");
+  src: url("../fonts/HelveticaBlack.eot") format("embedded-opentype"), url("../fonts/HelveticaBlack.woff2") format("woff2"), url("../fonts/HelveticaBlack.woff") format("woff"), url("../fonts/HelveticaBlack.ttf") format("truetype"), url("../fonts/HelveticaBlack.svg#HelveticaBlack") format("svg");
+}
+.type--smaallcaps {
+  font-size: calc(18px * .75);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: calc(18px/18);
+}
+
+.text-size-small {
+  font-size: 12px;
+}
+
+.text-muted {
+  color: #bfbfbf;
+}
+
+/*==================================================================
+
+FIVE GUYS | MASTER SCSS v.1.0
+CREATED BY: Nicholas Holloway
+
+===================================================================*/
+/*==================================================================
+    HTML & BODY 
+===================================================================*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Proxima-Nova-Regular";
+  margin-top: 70px;
+}
+
+/*==================================================================
+    NAVIGATION 
+===================================================================*/
+.bg-primary {
+  background: #cf1e27;
+}
+
+.bg-primary-2 {
+  background: #d87033;
+}
+
+.bg-lightgrey {
+  background: #eeeeee;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+/*==================================================================
+    CONTENT AREAS 
+===================================================================*/
+.page-wrapper {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.page-heading-title h2 {
+  margin-bottom: 4%;
+  font-family: "Helvetica Black";
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.contact-welcome {
+  font-size: 18px;
+  margin: 8% 30% 4%;
+}
+
+.contact-career {
+  font-size: 18px;
+  text-align: center;
+  margin: 4% 22%;
+}
+
+.contact-phone {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.contact-phone .number {
+  font-weight: 700;
+}
+
+.contact-address {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.contact-sub-head {
+  font-size: 18px;
+  text-align: left;
+}
+.contact-sub-head h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding-top: 30px;
+}
+.contact-sub-head p {
+  font-size: 18px;
+  padding: 0px 150px 0px 0px;
+}
+
+@media all and (max-width: 480px) {
+  .contact-welcome {
+    margin: 15% 0;
+  }
+
+  .contact-career {
+    font-size: 18px;
+    text-align: center;
+    margin: 16% 0%;
+  }
+
+  .page-wrapper {
+    padding: 80px 30px;
+  }
+}
+/* -----------------------------------------------------------------------------
+
+  WRAPPER OBJECT
+  
+----------------------------------------------------------------------------- */
+.o-wrapper {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* -----------------------------------------------------------------------------
+
+  CONTAINER OBJECTS
+  
+----------------------------------------------------------------------------- */
+.o-container {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 960px;
+}
+
+@media all and (min-width: 480px) {
+  .o-container {
+    padding: 0 24px;
+  }
+}
+@media all and (min-width: 720px) {
+  .o-container {
+    padding: 0 48px;
+  }
+}
+/* -----------------------------------------------------------------------------
+
+  HEADER OBJECT
+  
+----------------------------------------------------------------------------- */
+.o-header {
+  margin: 0;
+  padding: 0;
+}
+
+.o-header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #67b5d1;
+}
+
+.o-header-nav__link {
+  padding: 12px;
+  color: #fff;
+}
+
+.o-header-nav__link:hover {
+  color: #fff;
+  background-color: #3184a1;
+}
+
+.o-header__title {
+  margin: 24px;
+  padding: 0;
+  color: #818181;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) {
+  .o-header__title {
+    margin: 36px;
+    font-size: 42px;
+  }
+}
+/* -----------------------------------------------------------------------------
+
+  MAIN OBJECT
+  
+----------------------------------------------------------------------------- */
+.o-main {
+  /**/
+}
+
+/* -----------------------------------------------------------------------------
+
+  SUB-NAVIGATION OBJECT
+  
+----------------------------------------------------------------------------- */
+.o-sub-nav {
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.o-sub-nav__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.o-sub-nav__item {
+  margin: 0;
+  padding: 4px;
+}
+
+.o-sub-nav__link {
+  display: block;
+  margin: 0;
+  padding: 4px 24px;
+  border: solid 2px #67b5d1;
+}
+
+.o-sub-nav__link:hover,
+.o-sub-nav__item.active .o-sub-nav__link {
+  color: #fff;
+  background-color: #67b5d1;
+}
+
+@media all and (min-width: 720px) {
+  .o-sub-nav {
+    margin: 0 0 48px 0;
+  }
+}
+/* -----------------------------------------------------------------------------
+
+  FOOTER OBJECT
+  
+----------------------------------------------------------------------------- */
+.o-footer {
+  padding: 12px 0;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) {
+  .o-footer {
+    padding: 24px 0;
+  }
+}
+@media all and (min-width: 720px) {
+  .o-footer {
+    padding: 48px 0;
+  }
+}
+/* -----------------------------------------------------------------------------
+
+  SLIDE AND PUSH MENUS COMPONENT
+  
+----------------------------------------------------------------------------- */
+/**
+ * Menu overview.
+ */
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.c-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Left and right menus
+ *
+ * Slide and push menus coming in from the left and right inherit a lot of
+ * common styles. We'll start each of them off by doing up the common styles
+ * for each version, followed by individual styles.
+ *
+ * The various versions are governed by modifier classes.
+ */
+/**
+ * Common modifiers for left/right menus.
+ */
+.c-menu--slide-left,
+.c-menu--slide-right,
+.c-menu--push-left,
+.c-menu--push-right {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left,
+  .c-menu--slide-right,
+  .c-menu--push-left,
+  .c-menu--push-right {
+    width: 300px;
+  }
+}
+.c-menu--slide-left .c-menu__item,
+.c-menu--slide-right .c-menu__item,
+.c-menu--push-left .c-menu__item,
+.c-menu--push-right .c-menu__item {
+  display: block;
+  text-align: center;
+  border-top: solid 1px #b5dbe9;
+  border-bottom: solid 1px #3184a1;
+}
+
+.c-menu--slide-left .c-menu__item:first-child,
+.c-menu--slide-right .c-menu__item:first-child,
+.c-menu--push-left .c-menu__item:first-child,
+.c-menu--push-right .c-menu__item:first-child {
+  border-top: none;
+}
+
+.c-menu--slide-left .c-menu__item:last-child,
+.c-menu--slide-right .c-menu__item:last-child,
+.c-menu--push-left .c-menu__item:last-child,
+.c-menu--push-right .c-menu__item:last-child {
+  border-bottom: none;
+}
+
+.c-menu--slide-left .c-menu__link,
+.c-menu--slide-right .c-menu__link,
+.c-menu--push-left .c-menu__link,
+.c-menu--push-right .c-menu__link {
+  display: block;
+  padding: 12px 24px;
+  color: #000;
+}
+
+.c-menu--slide-left .c-menu__close,
+.c-menu--slide-right .c-menu__close,
+.c-menu--push-left .c-menu__close,
+.c-menu--push-right .c-menu__close {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+/**
+ * Slide/Push Menu Left.
+ */
+.c-menu--slide-left,
+.c-menu--push-left {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left,
+  .c-menu--push-left {
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+}
+.c-menu--slide-left.is-active,
+.c-menu--push-left.is-active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/**
+ * Slide/Push Menu Right.
+ */
+.c-menu--slide-right,
+.c-menu--push-right {
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-right,
+  .c-menu--push-right {
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+.c-menu--slide-right.is-active,
+.c-menu--push-right.is-active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/**
+ * Top and bottom menus
+ *
+ * Slide and push menus coming in from the top and bottom inherit a lot of
+ * common styles. We'll start each of them off by doing up the common styles
+ * for each version, followed by individual styles.
+ *
+ * The various versions are governed by modifier classes.
+
+/**
+ * Common modifiers for top/bottom menus
+ */
+.c-menu--slide-top,
+.c-menu--slide-bottom,
+.c-menu--push-top,
+.c-menu--push-bottom {
+  vertical-align: middle;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.c-menu--slide-top .c-menu__items,
+.c-menu--slide-bottom .c-menu__items,
+.c-menu--push-top .c-menu__items,
+.c-menu--push-bottom .c-menu__items {
+  display: inline-block;
+  text-align: center;
+}
+
+.c-menu--slide-top .c-menu__item,
+.c-menu--slide-bottom .c-menu__item,
+.c-menu--push-top .c-menu__item,
+.c-menu--push-bottom .c-menu__item {
+  display: inline-block;
+  line-height: 60px;
+}
+
+.c-menu--slide-top .c-menu__link,
+.c-menu--slide-bottom .c-menu__link,
+.c-menu--push-top .c-menu__link,
+.c-menu--push-bottom .c-menu__link {
+  display: block;
+  padding: 0 4px;
+  color: #000;
+}
+
+.c-menu--slide-top .c-menu__close,
+.c-menu--slide-bottom .c-menu__close,
+.c-menu--push-top .c-menu__close,
+.c-menu--push-bottom .c-menu__close {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 0 24px;
+  height: 60px;
+  line-height: 60px;
+}
+
+/**
+ * Slide/Push Menu Top.
+ */
+.c-menu--slide-top,
+.c-menu--push-top {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-600px);
+  -ms-transform: translateY(-600px);
+  transform: translateY(-600px);
+}
+
+.c-menu--slide-top.is-active,
+.c-menu--push-top.is-active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/**
+ * Slide/Push Menu Bottom.
+ */
+.c-menu--slide-bottom,
+.c-menu--push-bottom {
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
+}
+
+.c-menu--slide-bottom.is-active,
+.c-menu--push-bottom.is-active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/**
+ * Wrapper states.
+ *
+ * Various wrapper states occur depending on if a menu is pushing into view, in
+ * which case, the wrapper has to be pushed by the respective distance.
+ */
+.o-wrapper.has-push-left {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@media all and (min-width: 320px) {
+  .o-wrapper.has-push-left {
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+.o-wrapper.has-push-right {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@media all and (min-width: 320px) {
+  .o-wrapper.has-push-right {
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+}
+.o-wrapper.has-push-top {
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
+}
+
+.o-wrapper.has-push-bottom {
+  -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px);
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  color: #fff;
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.c-menu__close:focus {
+  outline: none;
+}
+
+/* -----------------------------------------------------------------------------
+
+  MASK COMPONENT
+  
+----------------------------------------------------------------------------- */
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* -----------------------------------------------------------------------------
+
+  BUTTONS
+  
+----------------------------------------------------------------------------- */
+.c-buttons {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.c-button {
+  display: inline-block;
+  margin: 4px;
+  padding: 12px 24px;
+  color: #67b5d1;
+  background: none;
+  font-size: 14px;
+  border: solid 2px #67b5d1;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.c-button:focus {
+  outline: none;
+}
+
+.c-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* -----------------------------------------------------------------------------
+
+  CARBON AD COMPONENT
+  
+----------------------------------------------------------------------------- */
+#carbonads {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  z-index: 1000;
+  padding: 24px 12px 12px 12px;
+  width: 154px;
+  background-color: #fff;
+  line-height: 1.1;
+  border: solid 1px #e7e7e7;
+}
+
+.carbon-wrap {
+  display: block;
+  margin: 0 0 4px 0;
+}
+
+.carbon-img {
+  display: block;
+  margin: 0 0 4px 0;
+  padding: 0;
+  width: 130px;
+  height: 100px;
+}
+
+.carbon-text {
+  color: #818181;
+  font-size: 12px;
+}
+
+.carbon-poweredby {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.carbonad__close {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  height: 24px;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+@media all and (max-width: 660px) {
+  #carbonads {
+    display: none;
+  }
+}
+/*==================================================================
+    MEDIA QUERIES 
+===================================================================*/
+@media (max-width: 480px) {
+  .contact-sub-head p {
+    padding-right: 20px;
+  }
+}
+/*==================================================================
+    COMPONENTS
+===================================================================*/
+/*==================================================================
+    NAVIGATION 
+===================================================================*/
+.navbar {
+  height: 70px;
+  background: #fff;
+}
+
+.navbar-list {
+  border-bottom: 1px solid #bfbfbf;
+  border-radius: 0;
+}
+.navbar-list ul li a {
+  font-family: "Helvetica";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1.5em 2em;
+  color: #000;
+  text-transform: uppercase;
+}
+.navbar-list ul li:hover {
+  -webkit-transition: all 900ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all 900ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -o-transition: all 900ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: all 900ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  /* linear */
+}
+
+.navbar-default .navbar-nav li a {
+  color: #000;
+}
+
+/*.navbar-toggle {
+
+   border-color: transparent;
+
+   // Modifiers
+   &:focus, &:hover {
+       background: transparent;
+   }
+
+   .icon-bar {
+    background: $primary-2;   
+   }
+}*/
+.drop-menu {
+  margin: 85px 100px 40px 145px;
+}
+.drop-menu ul li {
+  text-align: left;
+  padding-bottom: 30px;
+}
+.drop-menu ul li a {
+  font-family: "Helvetica Black";
+  color: #000;
+  font-size: 31px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.drop-menu-children ul li {
+  padding-bottom: 5px;
+}
+.drop-menu-children ul li a {
+  font-family: "Proxima-Nova-Regular";
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.secondary-menu-items .items-left {
+  display: flex;
+  color: #555555;
+  font-size: 18px;
+}
+.secondary-menu-items .items-left .sitemap {
+  color: #000;
+  font-size: 18px;
+}
+.secondary-menu-items .items-left .sitemap:after {
+  content: " | ";
+  color: #000;
+  padding: 0px 10px;
+}
+.secondary-menu-items .items-left .active-lang {
+  color: #000;
+  font-size: 18px;
+}
+.secondary-menu-items .items-right {
+  display: flex;
+  color: #555555;
+  font-size: 18px;
+  text-align: left;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-icon {
+  padding: 8px 15px;
+  font-size: 28px;
+}
+
+.mobile-order {
+  padding: 15px 0px;
+}
+.mobile-order a {
+  font-family: "Helvetica Black";
+  padding: 16px;
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 172px;
+  margin-top: 5px;
+}
+
+.logo-white {
+  background-image: url("../images/logo-white.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 172px;
+  height: 41px;
+  margin-top: 32px;
+}
+
+.c-hamburger {
+  /* display: block; */
+  position: relative;
+  overflow: hidden;
+  /* margin: 0; */
+  /* padding: 0; */
+  width: 60px;
+  height: 58px;
+  font-size: 0;
+  /* text-indent: -9999px; */
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  right: 18px;
+  height: 3px;
+  background: #000;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -8px;
+}
+
+.c-hamburger span::after {
+  bottom: -8px;
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+  background: #000;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: transparent;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+@media (max-width: 480px) {
+  #global-nav {
+    display: none;
+  }
+
+  .drop-menu {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .logo {
+    width: 120px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    right: 18px;
+    height: 3px;
+    background: #000;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .hide-mobile-nav {
+    display: block;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 480px) {
+  .hide-mobile-nav {
+    display: none;
+  }
+}
+.btn-hero-cta {
+  display: inline-block;
+  font-size: 17px;
+  font-family: "Helvetica Black";
+  padding: 1.25em 2em;
+  color: #fff;
+  border: 4px solid #fff;
+  text-align: center;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn-hero-cta:hover {
+  color: #a91920;
+  background: #fff;
+  text-decoration: none;
+}
+
+.btn-submit {
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+  font-family: "Helvetica Black";
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+}
+.btn-submit:hover {
+  color: #000;
+  background: #fff;
+}
+
+@media (max-width: 480px) {
+  .btn-hero-cta {
+    padding: 0.5em 1em;
+  }
+}
+.card {
+  background: #fff;
+}
+.card .card-title {
+  font-weight: 400;
+}
+.card .card-action a {
+  color: #cf1e27;
+}
+.card .card-action a:hover {
+  color: #a91920;
+}
+
+.hero-image-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: auto;
+  margin-top: 70px;
+}
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+}
+.hero-image-container .hero-main {
+  background-image: url("../images/five-guys-hero.png");
+  background-size: cover;
+  background-position: center;
+  flex: 2.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-image-container .hero-main .hero-content-wrapper .hero-text-light {
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+}
+.hero-image-container .hero-main .hero-content-wrapper .hero-text-bold {
+  color: #fff;
+  font-family: "Helvetica Black";
+  font-size: 70px;
+  text-transform: uppercase;
+}
+.hero-image-container .hero-secondary {
+  flex-direction: column;
+  flex: 1;
+}
+.hero-image-container .cta-join-crew {
+  background-image: url("../images/fg-carousel-img-1.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px;
+}
+.hero-image-container .cta-join-crew .hero-secondary-text-bold {
+  color: #fff;
+  font-family: "Helvetica Black";
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.hero-image-container .cta-mobile-wrapper {
+  background-image: url("../images/fg-stainless-steel.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+}
+.hero-image-container .cta-mobile-wrapper .cta-mobile-download {
+  line-height: 40%;
+}
+.hero-image-container .cta-mobile-wrapper .cta-app {
+  line-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.hero-image-container .cta-mobile-wrapper .hero-secondary-text-light {
+  color: #fff;
+  font-size: 28px;
+  padding: 0px 20px 0 0;
+  flex: 1;
+}
+.hero-image-container .cta-mobile-wrapper .hero-secondary-text-light .uppercase {
+  color: #fff;
+  font-family: "Helvetica";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.hero-image-container .cta-mobile-wrapper .phone-wrap {
+  flex: 1;
+}
+.hero-image-container .cta-mobile-wrapper .phone-wrap .mobile-phone {
+  background-image: url("../images/fg-mobile-phone.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 240px;
+  height: 270px;
+}
+
+@media (max-width: 480px) {
+  body {
+    height: 50px;
+    margin-top: 50px;
+  }
+
+  .hero-image-container {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .hero-image-container .hero-main {
+    background-position: center;
+    flex: 2.5;
+    display: flex;
+    height: 425px;
+    min-height: 425px;
+  }
+  .hero-image-container .hero-main .hero-content-wrapper .hero-text-light {
+    font-size: 24px;
+  }
+  .hero-image-container .hero-main .hero-content-wrapper .hero-text-bold {
+    color: #fff;
+    font-family: "Helvetica Black";
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .hero-image-container .cta-join-crew {
+    height: 375px;
+  }
+  .hero-image-container .cta-mobile-wrapper {
+    height: auto;
+    display: block;
+    padding: 30px 30px 0;
+  }
+  .hero-image-container .cta-mobile-wrapper .hero-secondary-text-light {
+    padding: 0px;
+    flex: initial;
+    text-align: center;
+  }
+  .hero-image-container .cta-mobile-wrapper .phone-wrap {
+    flex: 1;
+  }
+  .hero-image-container .cta-mobile-wrapper .phone-wrap .mobile-phone {
+    width: 100%;
+    height: 250px;
+  }
+}
+/*==================================================================
+    FOOTER 
+===================================================================*/
+footer {
+  background-image: url("../images/footer.png");
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .social-media-icons ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .social-media-icons ul li {
+  padding: 0 50px;
+}
+footer .social-media-icons ul li a {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media all and (max-width: 480px) {
+  footer .social-media-icons ul li {
+    padding: 0px 20px;
+  }
+}
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.unslider-wrap {
+  position: relative;
+}
+
+.unslider-wrap.unslider-carousel > li {
+  float: left;
+}
+
+.unslider-vertical > ul {
+  height: 100%;
+}
+
+.unslider-vertical li {
+  float: none;
+  width: 100%;
+}
+
+.unslider-fade {
+  position: relative;
+}
+
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10;
+}
+
+.unslider li,
+.unslider ol,
+.unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.unslider-arrow, a.unslider-arrow.prev {
+  position: absolute;
+  right: 250px;
+  bottom: 250px;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+}
+.unslider-arrow:before, a.unslider-arrow.prev:before {
+  color: #fff;
+  font-family: FontAwesome;
+  content: "\f053";
+}
+
+.unslider-arrow.next, a.unslider-arrow.next {
+  left: auto;
+  right: -130px;
+  bottom: 250px;
+  text-decoration: none;
+}
+.unslider-arrow.next:before, a.unslider-arrow.next:before {
+  color: #fff;
+  font-family: FontAwesome;
+  content: "\f054";
+}
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default;
+}
+
+.fg-form {
+  font-family: "Helvetica Neue";
+  border-radius: 0;
+  padding: 15px;
+  height: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.fg-select {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 15px;
+  height: inherit;
+  width: 50%;
+  position: relative;
+  bottom: 15px;
+  background-position: 205px -7px;
+}
+.fg-select:after {
+  font-family: 'FontAwesome';
+}
+
+.absolute {
+  position: absolute;
+}
+
+.chevron-position {
+  position: relative;
+  right: 40px;
+}
+
+.table thead tr td {
+  padding: 12px 20px;
+  vertical-align: middle;
+}
+.table tbody tr td {
+  padding: 12px 20px;
+  vertical-align: middle;
+}
+
+/*==================================================================
+    VENDOR
+===================================================================*/
+
+/*# sourceMappingURL=global.css.map */

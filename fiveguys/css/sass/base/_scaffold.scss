@@ -1,0 +1,21 @@
+
+a, button {
+    @include custTransition (900ms, $easeOutQuint);
+    
+    &:hover {
+        
+        @include custTransition (900ms, $easeOutQuint);
+    }
+}
+
+ul {
+    
+    list-style: none;
+    padding: 0;   
+}
+
+.content-container {
+    
+    margin: 0 auto 10px;
+    max-width: 960px;    
+}

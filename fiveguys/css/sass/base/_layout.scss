@@ -1,0 +1,100 @@
+
+.no-margin {
+    margin: 0;
+}
+
+.page-list {
+ 
+    ul {
+        
+        li {
+        
+            &:first-child {
+
+                color: #ecc35d;
+                font-family: $helvetica-black;
+                font-size: $font-size-18;
+                text-transform: uppercase;
+            }
+            
+            a {
+             
+                color: $white;
+                font-size: $font-size-18;
+            }
+        }
+    }
+}
+
+.accordion-wrapper {
+ 
+    //margin: 0 20%;
+    text-align: $align-left;
+}
+
+.accordion-btn {
+  display: block;
+  position: relative;
+  margin-bottom: -1px;
+  border-radius: 0;
+  color: $gray;
+  border: 1px solid $gray-light;
+  padding: 10px 15px;
+  font-size: $font-size-18;
+  font-weight: $font-semibold;
+  cursor: pointer;
+  //border-bottom: none;
+    
+    &:before {
+        
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      font-size: $font-size-18;
+      z-index: 2;
+      margin-top: -13px;
+      font-family: FontAwesome;
+      content: "\f078";
+      color: $gray;        
+    }
+}
+
+.accordion-content {
+
+  font-size: $font-size-18;
+  padding: $accordion-content-padding;
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+    
+    h2 {
+        
+        font-size: $font-size-20;
+        font-weight: $font-semibold;
+    }
+    
+    p {
+        font-size: $font-size-18;
+    }
+}
+
+.accordion-active {
+    
+    border-bottom: transparent;
+    
+    &:before {
+        
+      font-family: FontAwesome;
+      content: "\f077";
+    }
+}
+
+@media (max-width: $breakpoint-xs) {
+
+    .accordion-btn {
+
+        font-size: $font-size-14;
+        padding-right: 40px;
+    }
+    
+}
