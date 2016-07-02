@@ -52,7 +52,6 @@
     this.mask = document.querySelector(this.options.maskId);
     this.menu = document.querySelector('#c-menu--' + this.options.type);
     this.closeBtn = this.menu.querySelector('.c-menu__close');
-    //this.closeBtn = this.menu.querySelector('.close');      
     this.menuOpeners = document.querySelectorAll(this.options.menuOpenerClass);
     this._initEvents();
   };

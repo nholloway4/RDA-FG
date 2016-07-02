@@ -18,6 +18,7 @@
 
 })();
 
+
 $(".c-hamburger--htx").on("click", function () {
     $(this).toggleClass("active");
 });
@@ -45,11 +46,34 @@ $(document).ready(function() {
     $('.accordion-content').hide();
     $('.show').show();
   });
+    
+    /**
+    * Slide top instantiation and action.
+    */
+    var slideTop = new Menu({
+    wrapper: '#nav-wrapper',
+    type: 'slide-top',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+    });
 
+    var toggle = 0;
+    jQuery("#c-button--slide-top").click(function() {
+        toggle++;
+        var openSesame = function(flag) {
+            return (flag % 2 === 0) ? true : false;
+        };
+        if (openSesame(toggle) === false) {
+            slideTop.open();
+        } else if (openSesame(toggle) === true) {
+            slideTop.close();
+        }
+    }); 
 });
 
 
 
+/*
 function removeExtraWord() {
 
     var width = screen.width;
@@ -70,3 +94,4 @@ function removeExtraWord() {
 }
 
 removeExtraWord();
+*/
