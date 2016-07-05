@@ -710,6 +710,10 @@ body {
   text-align: center;
   margin: 4% 22%;
 }
+.contact-career a {
+  color: #000;
+  text-decoration: underline;
+}
 
 .contact-phone {
   font-size: 18px;
@@ -1610,7 +1614,7 @@ body.has-active-menu {
   }
   .drop-menu ul li {
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   .drop-menu ul li a {
     font-family: "Helvetica Black";
@@ -1756,7 +1760,7 @@ body.has-active-menu {
   height: auto;
 }
 .hero-image-container .hero-main {
-  background-image: url("../images/five-guys-hero.png");
+  background-image: url("../images/five-guys-hero.jpg");
   background-size: cover;
   background-position: center;
   flex: 2.5;
@@ -2018,29 +2022,53 @@ footer .social-media-icons ul li a {
   margin-bottom: 15px;
 }
 
-.fg-select {
+.contact-select {
   font-family: "Helvetica Neue";
   font-size: 18px;
   font-weight: 700;
   border-radius: 0;
+  background: #fff;
+  padding: 15px;
+  height: inherit;
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.fg-select {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: 700;
   padding: 15px;
   height: inherit;
   width: 50%;
   position: relative;
   bottom: 15px;
-  background-position: 205px -7px;
-}
-.fg-select:after {
-  font-family: 'FontAwesome';
-}
-
-.absolute {
-  position: absolute;
+  border-radius: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.chevron-position {
+.select-arrow {
   position: relative;
-  right: 40px;
+}
+
+.chevron-position, .chevron-position-nav {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.chevron-position-nav {
+  bottom: inherit;
 }
 
 @media (max-width: 480px) {

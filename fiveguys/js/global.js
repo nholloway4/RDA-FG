@@ -65,33 +65,42 @@ $(document).ready(function() {
         };
         if (openSesame(toggle) === false) {
             slideTop.open();
+            $( "#global-nav" ).hide();
+            
         } else if (openSesame(toggle) === true) {
             slideTop.close();
+            $( "#global-nav" ).show();
+            resize();
         }
-    }); 
+    });
+    
+    
+    function resize() {
+        if ($(window).width() < 480) {
+         $('#global-nav').css('display', 'none');
+        }
+        else {$('global-nav').css('display', 'block');}
+    }  
+    
 });
 
 
 
-/*
-function removeExtraWord() {
-
-    var width = screen.width;
-    
-    if ( width < 480 ){
-        
-        $(".page-heading-title h2").each(function() {
-            var text = $(this).text();
-            text = text.replace("Contact Us", "Contact");
-            $(this).text(text);
-        });
-    }
-    
-    else {
-     
-        //
-    }
-}
-
 removeExtraWord();
-*/
+
+    function removeExtraWord() {
+        if ($(window).width() < 480) {
+            $(".page-heading-title h2").each(function() {
+                var text = $(this).text();
+                text = text.replace("Contact Us", "Contact");
+                $(this).text(text);
+            });
+        }
+        else if ($(window).width() > 480) {
+            $(".page-heading-title h2").each(function() {
+                var text = $(this).text();
+                text = text.replace("Contact Us", "Contact Us");
+                $(this).text(text);
+            });            
+        }
+    }  

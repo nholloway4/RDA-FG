@@ -77,6 +77,12 @@ body {
     font-size: $font-size-18;
     text-align: center;
     margin: $contact-padding;
+    
+    a {
+        
+        color: $gray-base;
+        text-decoration: underline;
+    }
 }
 
 .contact-phone {

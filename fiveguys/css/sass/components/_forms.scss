@@ -11,36 +11,63 @@
     margin-bottom: $margin-lg;
 }
 
-.fg-select {
+.contact-select {
     
     font-family: $helvetica-neue;
     font-size: $font-size-18;    
     font-weight: $font-bold;
     border-radius: 0;
+    background: $white;
+    padding: $padding-lg;
+    height: inherit; 
+    width: 100%;
+    position: relative;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none; 
+    
+    &:after {
+        
+    }
+}
+
+.fg-select {
+    
+    font-family: $helvetica-neue;
+    font-size: $font-size-18;    
+    font-weight: $font-bold;
     padding: $padding-lg;
     height: inherit; 
     width: 50%;
     position: relative;
     bottom: 15px;  
-    background-position: 205px -7px;
-    
-    &:after {
-     
-        font-family: 'FontAwesome';
-    }
+    border-radius: 0;    
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;   
 }
 
+.select-arrow{
+    position: relative;
+}
 
-.absolute {
+.chevron-position  {
     
     position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: $font-size-24;
 }
 
-.chevron-position {
-    position: relative;
-    right: 40px;    
-}
-
+.chevron-position-nav {
+@extend .chevron-position; 
+    
+        bottom: inherit;
+    }
 
 @media (max-width: $breakpoint-xs) {
     
