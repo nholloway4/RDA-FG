@@ -60,7 +60,7 @@
     
     .cta-join-crew {
         background-image: url("../images/fg-carousel-img-1.png");
-        background-size: cover;
+        //background-size: cover;
         background-position: bottom;        
         //background: $gray-darker;
         height: 550px;
@@ -143,6 +143,10 @@
         margin-top: $navbar-height-mobile;        
     }
     
+    .hide-exs-head {
+        
+        display: none;
+    }
     .hero-image-container {
         
         margin-top: $navbar-height-mobile;

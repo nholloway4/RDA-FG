@@ -1786,7 +1786,6 @@ body.has-active-menu {
 }
 .hero-image-container .cta-join-crew {
   background-image: url("../images/fg-carousel-img-1.png");
-  background-size: cover;
   background-position: bottom;
   height: 550px;
   display: flex;
@@ -1844,6 +1843,10 @@ body.has-active-menu {
   body {
     height: 50px;
     margin-top: 50px;
+  }
+
+  .hide-exs-head {
+    display: none;
   }
 
   .hero-image-container {

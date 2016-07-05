@@ -74,6 +74,7 @@ $(document).ready(function() {
         } else if (openSesame(toggle) === true) {
             slideTop.close();
             $( "#global-nav" ).show();
+            
             resize();
         }
     });
@@ -83,16 +84,15 @@ $(document).ready(function() {
         if ($(window).width() < 480) {
          $('#global-nav').css('display', 'none');
         }
-        else {$('global-nav').css('display', 'block');}
+        else {$('#global-nav').css('display', 'block');}
     }  
     
 });
 
 
+//removeExtraWord();
 
-removeExtraWord();
-
-    function removeExtraWord() {
+    /*function removeExtraWord() {
         if ($(window).width() < 480) {
             $(".page-heading-title h2").each(function() {
                 var text = $(this).text();
@@ -107,4 +107,4 @@ removeExtraWord();
                 $(this).text(text);
             });            
         }
-    }  
+    }*/  
