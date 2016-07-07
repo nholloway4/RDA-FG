@@ -23,7 +23,7 @@
         <div class="container-fluid">
             <div id="nav-wrapper" class="navbar-header">
                
-                <button id="c-button--slide-top" class="c-hamburger c-hamburger--htx pull-left">
+                <button id="c-button--slide-top" class="c-hamburger c-hamburger--htx pull-left closemenu">
                   <span>toggle menu</span>
                 </button>
                
@@ -45,19 +45,18 @@
              </div>             
 
           <ul id="global-nav" class="nav navbar-nav navbar-right">
-            <li><a href="../">Locations</a></li>
-            <li><a href="../">Menu</a></li>
-            <li><a href="../">Order</a></li>
+            <li><a href="../">Create An Account</a></li>
+            <li><a href="../">Login</a></li>
           </ul>
 
         </div>
     </nav>   
    
-    <nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+    <!--<nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
       <button class="c-menu__close"><strong>x</strong></button>
         <div class="drop-menu">
             <div class="drop-menu-items">
-                <ul class="newul col-md-3">
+                <ul class="col-md-3">
                     <li><a href="../">Order</a></li>                 
                     <li><a href="../">Locations</a></li>
                     <li><a href="../">Menu</a>
@@ -69,7 +68,7 @@
                         </div>
                     </li> 
                 </ul>
-                <ul class="newul col-md-3">
+                <ul class="col-md-3">
                     <li><a href="../">Fanatics</a>
                         <div class="drop-menu-children">
                             <ul>
@@ -82,7 +81,7 @@
                         </div>
                     </li> 
                 </ul> 
-                <ul class="newul col-md-3">
+                <ul class="col-md-3">
                     <li><a href="../">Contact</a>
                         <div class="drop-menu-children">
                             <ul>
@@ -94,7 +93,7 @@
                         </div>               
                     </li> 
                 </ul>
-                <ul class="newul col-md-3 social">
+                <ul class="col-md-3 social">
                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                     <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                     <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
@@ -113,7 +112,7 @@
                 <div class="col-md-6">
                     <div class="items-right">
                         <span>Five Guys Worldwide</span>
-                            <select class="fg-select m-l-lg">
+                            <select class="form-control fg-select m-l-lg">
                               <option>USA</option>
                               <option>UK</option>
                               <option>Austrailia</option>
@@ -129,61 +128,44 @@
         </div>    
     </nav>
     
-    <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+    <div id="c-mask" class="c-mask"></div>-->
 
-    <div class="element-container">
-        <div class="hero-main">
-                        <!--<img src="/images/five-guys-hero.jpg" />-->
-            <div class="hero-content-wrapper">
-                <div class="content">
-                    <div class="hero-text-light">Handcrafted</div>
-                    <div class="hero-text-bold">Burgers & Fries</div>
-                    <div class="hero-text-light">since 1986</div>
-                    <a class="btn-hero-cta m-t-xl" href="#">Order</a>
+    <div class="content-container">
+        <div class="page-wrapper">
+            <div class="page-heading-title">  
+                <h3>Find Locations Near You <span class="hide-exs-head"></span></h3>
+            </div>
+
+            <div class="search-box-wrapper">
+                <div class="relative-element">
+                    <div class="search-loc-position">
+                        <i class="ion-ios-location-outline" aria-hidden="true"></i>
+                    </div>    
                 </div>
+                <div class="">
+                    <input type="text" class="form-control search-box" placeholder="Enter your zip code...">
+                </div>
+              <div class="relative-element">
+                  <div class="search-icon-position">
+                        <button type="submit" class="search-btn flip-icon fa fa-search"></button> 
+                  </div>  
+              </div>      
+              <!--<div class="relative-element">    
+                  <span class="input-group-btn ">
+                    <button class="btn btn-default " type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </span>
+              </div>-->      
+            </div><!-- /input-group -->
+
+            <div class="contact-career">
+                <span>Skip the line and build your order online.</span>  
             </div> 
 
-        </div>    
-        
-        <div class="hero-secondary">
-            <div class="secondary-group">
-                <div class="cta-join-crew">
-                        <div class="hero-secondary-text-bold">
-                            <span>Join The Team</span>
-                        </div>                
-                    <!--<div class="col-md-4">
-                        <div class="hero-slider">
-                            <ul>
-                                <li>
+            <div class="contact-phone">
+                <span>Simply enter your zipcode and pick up your order at Five Guys store nearest you!</span> 
+            </div>           
 
-                                </li>
-                                <li>Another slide</li>
-                                <li>My last slide</li>
-                            </ul>
-                        </div> 
-                    </div>-->    
-
-
-                    <!--<img src="../fiveguys/images/fiveguys1.jpg" />-->
-                </div>
-                <div class="cta-mobile-wrapper">
-                    <div class="mobile-callout-overlay"></div>
-                    <div class="hero-secondary-text-light">
-                        <div class="cta-app">
-                            <span>Download the App!</span>
-                        </div>    
-                        <div class="cta-mobile-download">
-                            <span class="uppercase">Available for Iphone & Android</span>
-                        </div>
-                    </div>  
-                    <div class="phone-wrap">
-                        <div class="mobile-phone">
-                        </div>   
-                    </div>    
-                    <!--<img src="../fiveguys/images/fiveguys1.jpg" />-->
-                </div>
-            </div>    
-        </div>
+        </div>  
     </div>
       
     <!--<footer>
@@ -195,13 +177,13 @@
                 <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
             </ul>
         </div>    
-    </footer>-->      
+    </footer>-->  
       
     <!-- JS -->
     <script src="/js/build/production.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/js/menu.js"></script>
-      
+
     </body>
     
 </html>

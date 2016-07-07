@@ -11,6 +11,65 @@
     margin-bottom: $margin-lg;
 }
 
+.search-box-wrapper {
+ 
+    margin: 0 25%;
+}
+
+.search-box {
+@extend .fg-form; 
+
+    
+}
+
+
+ 
+input[type="text"] {
+    
+    font-weight: $font-normal;
+    font-style: italic;
+    font-size: $font-size-19;
+    padding-left: 40px;
+}
+
+
+.search-btn {
+ 
+    background: transparent;
+    border-color: transparent;
+    font-size: $font-size-32;
+    color: $gray-base;
+    
+    &:hover {
+     
+        background-color: transparent;
+        border-color: transparent;   
+    }
+}
+
+.search-loc-position {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    font-size: $font-size-28;
+    color: $gray;
+}
+
+.search-icon-position  {
+    
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+    //font-size: $font-size-24;
+}
+
+.flip-icon {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 .contact-select {
     
     font-family: $helvetica-neue;
@@ -51,7 +110,7 @@
     appearance:none;   
 }
 
-.select-arrow{
+.select-arrow, .relative-element {
     position: relative;
 }
 
