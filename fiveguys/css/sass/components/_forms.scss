@@ -11,6 +11,42 @@
     margin-bottom: $margin-lg;
 }
 
+.ui-autocomplete-input {
+    border-radius: 0 !important; //TO DO - change this in custom css
+    padding: 15px 15px 15px 35px !important;
+    height: inherit;
+    font-weight: $font-bold;
+    font-size: $font-size-18;
+    margin-bottom: $margin-lg;    
+}
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    padding: 0;
+    margin-top: 2px;
+    font-family: $helvetica-neue;
+    font-size: $font-size-19;
+    color: $gray-base;
+    border-radius: 0;
+    list-style: none;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+}
+.ui-autocomplete > li {
+  padding: 15px 15px 15px 35px;
+}
+.ui-autocomplete > li.ui-state-focus {
+  background-color: #DDD;
+}
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
 .search-box-wrapper {
  
     margin: 0 25%;
@@ -21,7 +57,6 @@
 
     
 }
-
 
  
 input[type="text"] {

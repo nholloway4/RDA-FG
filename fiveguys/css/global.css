@@ -772,7 +772,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 800px;
+  height: 825px;
 }
 
 .location-results {
@@ -780,7 +780,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 800px;
+  height: 825px;
 }
 .location-results .result {
   font-family: "Helvetica";
@@ -1439,6 +1439,9 @@ body.has-active-menu {
 .navbar-default .navbar-nav li a {
   color: #000;
 }
+.navbar-default .navbar-nav li a:hover {
+  color: #cf1e27;
+}
 
 /*.navbar-toggle {
 
@@ -2069,6 +2072,45 @@ footer .social-media-icons ul li a {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
+}
+
+.ui-autocomplete-input {
+  border-radius: 0 !important;
+  padding: 15px 15px 15px 35px !important;
+  height: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.ui-autocomplete {
+  position: absolute;
+  z-index: 1000;
+  cursor: default;
+  padding: 0;
+  margin-top: 2px;
+  font-family: "Helvetica Neue";
+  font-size: 19px;
+  color: #000;
+  border-radius: 0;
+  list-style: none;
+  background-color: #e6e6e6;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.ui-autocomplete > li {
+  padding: 15px 15px 15px 35px;
+}
+
+.ui-autocomplete > li.ui-state-focus {
+  background-color: #DDD;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
 }
 
 .search-box-wrapper {

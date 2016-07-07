@@ -85,8 +85,18 @@ $(document).ready(function() {
          $('#global-nav').css('display', 'none');
         }
         else {$('#global-nav').css('display', 'block');}
-    }  
+    } 
     
+    $(function() {
+      var availableTags = [
+        "Springfield, VA", "Springfield, IL", "Charlotte, NC", "Springfield, MO", "Atlanta, GA", 
+      ];
+
+      $(".autocomplete").autocomplete({
+        source: availableTags
+      });
+    });    
+
 });
 
 

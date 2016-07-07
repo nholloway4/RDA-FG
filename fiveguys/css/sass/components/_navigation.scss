@@ -56,9 +56,11 @@
             a {
                 color: $gray-base;
                 
-                &:hover {
-                    
+            &:hover {
+
+                    color: $primary;
                 }
+                 
             }
         }
     }
