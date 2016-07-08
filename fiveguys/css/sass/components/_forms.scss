@@ -11,6 +11,13 @@
     margin-bottom: $margin-lg;
 }
 
+[type="text"].fg-form {
+    font-weight: $font-bold;
+    font-style:normal;
+    font-size: $font-size-18; 
+    padding-left: 15px;    
+}
+
 .fg-select {
     
     font-family: $helvetica-neue;
@@ -150,46 +157,6 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 
-.squaredThree {
-  width: 20px;
-  position: relative;
-  margin: 20px auto;
-  label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(top, #222 0%, #45484d 100%);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #fcfff4;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
-    }
-    &:hover::after {
-      opacity: 0.3;
-    }
-  }
-  input[type=checkbox] {
-    visibility: hidden;
-    &:checked + label:after {
-      opacity: 1;
-    }    
-  }
-}
-
 //SEARCH
 
 .search-box-wrapper {
@@ -197,10 +164,16 @@ input[type="checkbox"], input[type="radio"] {
     margin: 0 22%;
 }
 
-.search-box {
-@extend .fg-form; 
+[type="text"].search-box {
+    border-radius: 0;
+    padding: $padding-lg;
+    height: inherit;
+    font-weight: $font-normal;
+    font-style: italic;
+    font-size: $font-size-19;
+    margin-bottom: $margin-lg;    
+    padding-left: 60px;
 }
-
  
 input[type="text"] {
     
@@ -312,7 +285,30 @@ input[type="text"] {
             font-family: 'FontAwesome';
         }
     }
-    
+    .search-box-wrapper {
+     
+        margin: 0;
+    }
+    [type="text"].search-box {
+     
+        font-size: $font-size-16;
+        padding-left: 45px;
+    }
+    .search-btn {
+     
+        font-size: $font-size-18;
+    }
+    .search-loc-position {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: $font-size-24;
+    }    
+    .search-icon-position {
+        position: absolute;
+        bottom: 30px;
+        right: 5px;
+    }    
     .absolute {
         display: none;
     }

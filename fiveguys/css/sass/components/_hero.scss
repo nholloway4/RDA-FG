@@ -147,7 +147,7 @@
         
         display: none;
     }
-    .hero-image-container {
+    .element-container {
         
         margin-top: $navbar-height-mobile;
         flex-direction: column;
@@ -180,7 +180,8 @@
         
         .cta-join-crew {
             
-            height: 375px;    
+            height: 375px; 
+            background-position: center;
         }
         
         .cta-mobile-wrapper {
