@@ -11,98 +11,22 @@
     margin-bottom: $margin-lg;
 }
 
-.ui-autocomplete-input {
-    border-radius: 0 !important; //TO DO - change this in custom css
-    padding: 15px 15px 15px 35px !important;
-    height: inherit;
-    font-weight: $font-bold;
-    font-size: $font-size-18;
-    margin-bottom: $margin-lg;    
-}
-
-.ui-autocomplete {
-    position: absolute;
-    z-index: 1000;
-    cursor: default;
-    padding: 0;
-    margin-top: 2px;
+.fg-select {
+    
     font-family: $helvetica-neue;
-    font-size: $font-size-19;
-    color: $gray-base;
-    border-radius: 0;
-    list-style: none;
-    background-color: #e6e6e6;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-            border-radius: 0px;
-}
-.ui-autocomplete > li {
-  padding: 15px 15px 15px 35px;
-}
-.ui-autocomplete > li.ui-state-focus {
-  background-color: #DDD;
-}
-.ui-helper-hidden-accessible {
-  display: none;
-}
-
-.search-box-wrapper {
- 
-    margin: 0 25%;
-}
-
-.search-box {
-@extend .fg-form; 
-
-    
-}
-
- 
-input[type="text"] {
-    
-    font-weight: $font-normal;
-    font-style: italic;
-    font-size: $font-size-19;
-    padding-left: 40px;
-}
-
-
-.search-btn {
- 
-    background: transparent;
-    border-color: transparent;
-    font-size: $font-size-32;
-    color: $gray-base;
-    
-    &:hover {
-     
-        background-color: transparent;
-        border-color: transparent;   
-    }
-}
-
-.search-loc-position {
-    position: absolute;
-    top: 12px;
-    left: 14px;
-    font-size: $font-size-28;
-    color: $gray;
-}
-
-.search-icon-position  {
-    
-    position: absolute;
-    bottom: 24px;
-    right: 20px;
-    //font-size: $font-size-24;
-}
-
-.flip-icon {
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
+    font-size: $font-size-18;    
+    font-weight: $font-bold;
+    padding: $padding-lg;
+    height: inherit; 
+    width: 50%;
+    position: relative;
+    bottom: 15px;  
+    border-radius: 0;    
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;   
 }
 
 .contact-select {
@@ -127,24 +51,6 @@ input[type="text"] {
     }
 }
 
-.fg-select {
-    
-    font-family: $helvetica-neue;
-    font-size: $font-size-18;    
-    font-weight: $font-bold;
-    padding: $padding-lg;
-    height: inherit; 
-    width: 50%;
-    position: relative;
-    bottom: 15px;  
-    border-radius: 0;    
-    -webkit-border-radius:0px;
-    -moz-border-radius:0px;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;   
-}
-
 .select-arrow, .relative-element {
     position: relative;
 }
@@ -156,6 +62,229 @@ input[type="text"] {
     right: 20px;
     font-size: $font-size-24;
 }
+
+//CHECKBOXES
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="checkbox"]+label {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 20px;
+    font-size: $font-size-11;
+    font-weight: $font-thin;    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+[type="checkbox"].fg-box:checked+label:before {
+    /*top: 0;
+    left: 0;
+    width: 8px;
+    height: 14px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 3.5px solid $primary;
+    border-bottom: 3.5px solid $primary;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;*/
+    
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    background: transparent;
+    top: 5px;
+    left: 5px;
+    border: 2.5px solid $primary;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);    
+}
+[type="checkbox"].fg-box:not(:checked)+label:after {
+    height: 18px;
+    width: 18px;
+    border: 1px solid $gray-light;
+    background-color: $white;
+    top: 0px;
+    border-radius: 0;
+    z-index: 0;
+}
+[type="checkbox"].fg-box:checked+label:after {
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $gray-light;
+    background-color: $white;
+    border-radius: 0;
+    z-index: 0;
+}
+
+[type="checkbox"].fg-box+label:before, [type="checkbox"].fg-box+label:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    //transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+}
+[type="checkbox"].fg-box+label:after {
+    border-radius: 2px;
+}
+
+
+.squaredThree {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #fcfff4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+}
+
+//SEARCH
+
+.search-box-wrapper {
+ 
+    margin: 0 22%;
+}
+
+.search-box {
+@extend .fg-form; 
+}
+
+ 
+input[type="text"] {
+    
+    font-weight: $font-normal;
+    font-style: italic;
+    font-size: $font-size-19;
+    padding-left: 60px;
+}
+
+
+.search-btn {
+ 
+    background: transparent;
+    border-color: transparent;
+    font-size: $font-size-32;
+    color: $gray-base;
+    
+    &:hover {
+     
+        background-color: transparent;
+        border-color: transparent;   
+    }
+}
+
+.search-loc-position {
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    font-size: $font-size-28;
+    color: $gray;
+}
+
+.search-icon-position  {
+    
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+    //font-size: $font-size-24;
+}
+
+.ui-autocomplete-input {
+    border-radius: 0 !important; //TO DO - change this in custom css
+    padding: 15px 15px 15px 65px !important;
+    height: inherit;
+    font-weight: $font-bold;
+    font-size: $font-size-18;
+    margin-bottom: $margin-lg;    
+}
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    padding: 0;
+    margin-top: 2px;
+    font-family: $helvetica-neue;
+    font-size: $font-size-19;
+    color: $gray-base;
+    border-radius: 0;
+    list-style: none;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+}
+.ui-autocomplete > li {
+  padding: 15px 15px 15px 65px;
+}
+.ui-autocomplete > li.ui-state-focus {
+  background-color: #DDD;
+}
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+.flip-icon {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
 
 .chevron-position-nav {
 @extend .chevron-position; 
@@ -185,7 +314,6 @@ input[type="text"] {
     }
     
     .absolute {
-        
         display: none;
     }
 }

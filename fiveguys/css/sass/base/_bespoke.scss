@@ -67,7 +67,7 @@ body {
     h3 {
         margin-bottom: 4%;
         font-family: $helvetica-neue;
-        font-size: $font-size-32;
+        font-size: $font-size-24;
         text-transform: uppercase;
     }    
     
@@ -167,10 +167,10 @@ body {
 
 .location-results {
  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    //text-align: center;
     height: 825px;
     
     .result {
@@ -180,8 +180,86 @@ body {
         font-weight: $font-semibold;
         text-transform: uppercase;
         margin: 0 20%;
+        
+
+    }
+    
+    .store-locations {
+
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        
+        
+        ul {
+            
+            width: 100%;
+            
+            li {
+                padding: 20px;
+                width: 100%;
+                display: flex;                
+                
+                &:hover {
+                 
+                    background: $gray-light;
+                    @include custTransition (900ms, $easeOutQuint);
+
+                }
+            }
+        }
+        
+        .result-number {
+         
+            padding: 8px 13px;
+            color: $white;
+            background: $primary;
+            border-radius: 50%;
+            margin-right: 20px;
+            line-height: 3;
+        }
+    }  
+    
+    .street, .citystate {
+     
+        font-size: $font-size-17;
+        font-family: $helvetica-neue;
+        font-weight: $font-semibold;
+        text-transform: uppercase;
+    }
+    
+    .distance {
+     
+        font-size: $font-size-13;
+        padding-right: $padding-lg;
+    }
+    
+    .daytime, .phone {
+       font-size: $font-size-13; 
     }
 }
+
+.location-refinement {
+ 
+    padding: 15px 15px 15px 35px;
+    border-bottom: 1px solid $gray-light;
+    
+    .label-head {
+        
+        display: inline-block;
+        font-size: $font-size-13;
+        font-family: $helvetica;
+        font-weight: $font-bold;        
+        text-transform: uppercase;
+        padding-right: $padding-lg;
+        
+        span {
+            
+            font-size: $font-size-11;
+        }
+    }
+}
+
 //MEDIA
 
 @media all and (max-width: $breakpoint-xs) {
