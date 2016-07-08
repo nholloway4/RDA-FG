@@ -50,7 +50,13 @@ $(document).ready(function() {
     $('.accordion-content').hide();
     $('.show').show();
   });
-    
+    $(function() {
+        jQuery(window).load(function() {
+          jQuery('.flexslider').flexslider({
+            animation: "slide"
+          });
+        }); 
+    });     
     /**
     * Slide top instantiation and action.
     */
@@ -95,9 +101,12 @@ $(document).ready(function() {
       $(".autocomplete").autocomplete({
         source: availableTags
       });
-    });    
+    });
+    
 
 });
+
+
 
 
 //removeExtraWord();

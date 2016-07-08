@@ -91,9 +91,16 @@ $(document).ready(function() {
       $(".autocomplete").autocomplete({
         source: availableTags
       });
-    });    
-
+    });
+    
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
 });
+
+
 
 
 //removeExtraWord();

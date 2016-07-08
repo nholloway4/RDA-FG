@@ -59,15 +59,15 @@
     //PLACEHOLDERS  
     
     .cta-join-crew {
-        background-image: url("../images/fg-carousel-img-1.png");
+        //background-image: url("../images/fg-carousel-img-1.png");
         //background-size: cover;
         background-position: bottom;        
         //background: $gray-darker;
         height: 550px;
-        display: flex; 
+        //display: flex; 
         justify-content: center; 
         align-items: flex-end;
-        padding: $padding-xl;
+        //padding: $padding-xl;
         
         .hero-secondary-text-bold {
 
@@ -75,6 +75,9 @@
             font-family: $helvetica-black;            
             font-size: $font-size-24;
             text-transform: uppercase;
+            position: absolute;
+            bottom: 45px;
+            left: 120px;            
             
         }
     }
@@ -174,6 +177,7 @@
                     font-family: $helvetica-black;
                     font-size: $font-size-28;
                     text-transform: uppercase;
+                    left: 41px;
                 }
             }
         }
@@ -182,6 +186,10 @@
             
             height: 375px; 
             background-position: center;
+            
+            .hero-secondary-text-bold {
+                left: 40px;
+            }        
         }
         
         .cta-mobile-wrapper {
@@ -208,5 +216,5 @@
                 } 
             }            
         }        
-    }  
+    }      
 }
