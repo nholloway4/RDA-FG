@@ -842,7 +842,7 @@ body {
   width: 100%;
 }
 .location-results .store-locations ul li {
-  padding: 20px;
+  padding: 35px 20px 20px 20px;
   width: 100%;
   display: flex;
 }
@@ -874,6 +874,16 @@ body {
 }
 .location-results .daytime, .location-results .phone {
   font-size: 13px;
+}
+.location-results .food ul li {
+  padding: 0px 0px 20px;
+  display: flex;
+}
+.location-results .food ul li .icon {
+  padding: 5px 0px 0px 20px;
+}
+.location-results .food ul li img {
+  width: auto;
 }
 
 .location-refinement {

@@ -240,7 +240,7 @@ body {
             
             li {
                 
-                padding: 20px;
+                padding: 35px 20px 20px 20px;
                 width: 100%;
                 display: flex;                
                 
@@ -280,6 +280,27 @@ body {
     
     .daytime, .phone {
        font-size: $font-size-13; 
+    }
+    .food {
+        
+        ul {
+            
+            li {
+                
+                padding: 0px 0px 20px;
+                //width: 100%;
+                display: flex;  
+        
+                .icon {
+
+                    padding: 5px 0px 0px 20px;
+                }
+
+                img {
+                    width: auto;
+                }
+            }
+        }
     }
 }
 
