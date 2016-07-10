@@ -153,7 +153,7 @@
     .element-container {
         
         margin-top: $navbar-height-mobile;
-        flex-direction: column;
+        flex-direction: column-reverse; 
         
         .hero-main {
 

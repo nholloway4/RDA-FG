@@ -183,9 +183,13 @@ body {
         display: flex;
         font-family: $helvetica;
         font-size: $font-size-24;
-        font-weight: $font-semibold;
         text-transform: uppercase;
         margin: 0 20%;
+        
+        h2 {
+         
+            font-weight: $font-bold;
+        }
     }    
 }
 
@@ -206,7 +210,6 @@ body {
         padding: 20px 20px 20px 70px;   
         font-size: $font-size-19;
 
-        
         ul {
             
             li {
@@ -248,19 +251,36 @@ body {
                  
                     background: $gray-light;
                     @include custTransition (900ms, $easeOutQuint);
-
                 }
             }
         }
         
-        .result-number {
-         
-            padding: 8px 13px;
-            color: $white;
+        .pin {
             background: $primary;
-            border-radius: 50%;
-            margin-right: 20px;
-            line-height: 3;
+            display: inline-block;
+            margin-right: $margin-lg;
+            border-radius: 14px 16px 14px 0;
+            width: 30px;
+            height: 30px;
+            border: 4px solid $primary;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: relative;
+            -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+
+            .number {
+
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                text-align: center;
+                color: $white;        
+            }
         }
     }  
     
@@ -275,7 +295,13 @@ body {
     .distance {
      
         font-size: $font-size-13;
-        padding-right: $padding-lg;
+        
+        a {
+         
+            color: $gray-base;
+            padding-left: $padding-lg;
+            text-decoration: underline;
+        }
     }
     
     .daytime, .phone {
@@ -324,6 +350,8 @@ body {
         }
     }
 }
+
+
 
 //MEDIA
 
@@ -954,5 +982,58 @@ body.has-active-menu {
     .locations-near-margin {
 
         margin: 0;
-    }    
+    } 
+    .location-results, .location-results-none {
+
+        height: auto;
+    }
+    
+    .result {
+     
+        h2 {
+         
+            font-size: $font-size-20;
+        }
+    }
+    .map-wrapper {
+        padding: 45px 0px;
+        height: auto;
+    }
+
+    .location-results {
+        
+        .store-locations {
+
+            ul {
+
+                width: 100%;
+
+                li {
+
+                    display: flex; 
+                    //flex-direction: column;
+                }
+            }
+        }
+        .food {
+
+            ul {
+
+                li {
+
+                    padding: 0px 0px 20px;
+                    display: inline-block;  
+
+                    .icon {
+
+                        padding: 5px 0px 0px 20px;
+                    }
+
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }         
+    }   
 }
