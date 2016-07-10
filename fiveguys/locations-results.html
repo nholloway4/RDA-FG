@@ -150,7 +150,7 @@
                     <button type="submit" class="search-btn flip-icon fa fa-search"></button> 
               </div>  
           </div> 
-          <div class="location-refinement">
+          <div id="desktop-refinement" class="location-refinement">
               <div class="label-head">Refine:</div>
               <input type="checkbox" class="fg-box" id="refineMilkshakes" checked="checked" />
               <label for="refineMilkshakes">Milkshakes</label>
@@ -160,7 +160,26 @@
               <label for="refineBreakfast">Breakfast</label>              
               <input type="checkbox" class="fg-box" id="refineCCFreestyle"  />
               <label for="refineCCFreestyle">Coca-Cola Freestyle</label>            
-          </div>    
+          </div>
+          <div class="mobile-refinement">
+                <div class="refine-accordion-wrapper">
+                  <div class="refine-accordion-btn">Refine:</div>
+                  <div class="refine-accordion-content">
+                      <div class="location-refinement">
+                          <div class="label-head"></div>
+                          <input type="checkbox" class="fg-box" id="refineMilkshakes" checked="checked" />
+                          <label for="refineMilkshakes">Milkshakes</label>
+                          <input type="checkbox" class="fg-box" id="refineBeer" />
+                          <label for="refineBeer">Beer</label>
+                          <input type="checkbox" class="fg-box" id="refineBreakfast" checked="checked" />
+                          <label for="refineBreakfast">Breakfast</label>              
+                          <input type="checkbox" class="fg-box" id="refineCCFreestyle"  />
+                          <label for="refineCCFreestyle">Coca-Cola Freestyle</label>            
+                      </div>
+                  </div>
+                </div> 
+           </div>    
+            
           <div class="location-results">
               <div class="store-locations">
                   <ul>

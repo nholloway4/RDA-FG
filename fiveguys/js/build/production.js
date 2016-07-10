@@ -50,13 +50,24 @@ $(document).ready(function() {
     $('.accordion-content').hide();
     $('.show').show();
   });
-    $(function() {
-        jQuery(window).load(function() {
-          jQuery('.flexslider').flexslider({
-            animation: "slide"
-          });
-        }); 
-    });     
+  $(function() {
+    $('.refine-accordion-btn').click(function() {
+      $('.refine-accordion-content').slideUp('normal');
+      $('.refine-accordion-btn').removeClass('refine-accordion-active');
+      if ($(this).next().is(':visible') == true) {
+        $('.refine-accordion-btn').removeClass('active');
+      }
+      if ($(this).next().is(':hidden') == true) {
+        $(this).next().slideDown('normal');
+        $(this).addClass('refine-accordion-active');
+        //$(this).css('border-bottom' , 'transparent');
+      }
+      $('.refine-accordion-content').one().removeClass('show');
+    });
+
+    $('.refine-accordion-content').hide();
+    $('.show').show();
+  });    
     /**
     * Slide top instantiation and action.
     */
@@ -103,7 +114,11 @@ $(document).ready(function() {
       });
     });
     
-
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
 });
 
 

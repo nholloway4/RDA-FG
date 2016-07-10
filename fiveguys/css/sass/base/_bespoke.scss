@@ -352,7 +352,6 @@ body {
 }
 
 
-
 //MEDIA
 
 @media all and (max-width: $breakpoint-xs) {
@@ -1035,5 +1034,9 @@ body.has-active-menu {
                 }
             }
         }         
-    }   
+    }
+    .location-refinement {
+        border-bottom: 0;
+        padding: 0;
+    }    
 }

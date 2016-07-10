@@ -553,11 +553,11 @@ ul {
   font-size: 18px;
 }
 
-.accordion-wrapper {
+.accordion-wrapper, .refine-accordion-wrapper {
   text-align: left;
 }
 
-.accordion-btn {
+.accordion-btn, .refine-accordion-btn {
   font-family: "Helvetica Neue";
   display: block;
   position: relative;
@@ -570,7 +570,7 @@ ul {
   font-weight: 600;
   cursor: pointer;
 }
-.accordion-btn:before {
+.accordion-btn:before, .refine-accordion-btn:before {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -582,38 +582,62 @@ ul {
   color: #555555;
 }
 
-.accordion-content {
+.accordion-content, .refine-accordion-content {
   font-size: 18px;
   padding: 25px 150px 25px 15px;
   border-left: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
 }
-.accordion-content h2 {
+.accordion-content h2, .refine-accordion-content h2 {
   font-size: 20px;
   font-weight: 600;
 }
-.accordion-content p {
+.accordion-content p, .refine-accordion-content p {
   font-size: 18px;
 }
 
-.accordion-active {
+.accordion-active, .refine-accordion-active {
   border-bottom: transparent;
 }
-.accordion-active:before {
+.accordion-active:before, .refine-accordion-active:before {
   font-family: FontAwesome;
   content: "\f077";
 }
 
+.mobile-refinement {
+  display: none;
+}
+
 @media (max-width: 480px) {
-  .accordion-btn {
-    font-size: 14px;
-    padding-right: 40px;
+  #desktop-refinement {
+    display: none;
   }
 
-  .accordion-content {
+  .mobile-refinement {
+    display: block;
+  }
+
+  .refine-accordion-wrapper {
+    border-top: 0px;
+  }
+
+  .refine-accordion-btn {
+    font-size: 14px;
+    padding-right: 40px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 0;
+  }
+
+  .refine-accordion-content {
     font-size: 14px;
     padding: 25px 15px 25px 15px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 15px 10px;
   }
 }
 /*==================================================================
@@ -1572,6 +1596,11 @@ body.has-active-menu {
   }
   .location-results .food ul li img {
     width: auto;
+  }
+
+  .location-refinement {
+    border-bottom: 0;
+    padding: 0;
   }
 }
 /*==================================================================
@@ -2782,6 +2811,10 @@ input[type="text"] {
 
   .absolute {
     display: none;
+  }
+
+  [type="checkbox"] + label {
+    display: block;
   }
 }
 .table thead tr td {

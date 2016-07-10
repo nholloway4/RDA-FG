@@ -312,4 +312,9 @@ input[type="text"] {
     .absolute {
         display: none;
     }
+    
+   [type="checkbox"] + label {
+    
+       display: block;
+   }
 }
