@@ -449,7 +449,7 @@ body {
         //position: absolute;
         //bottom: 20px;
         //left: 30%;
-        text-align: center;
+        text-align: $align-center;
         position: absolute;
         left: 18%;
         right: 18%;
@@ -561,6 +561,7 @@ body {
         padding-bottom: $padding-xl;
     }
 }
+
 .promo-padding {
 
     padding-top: 70px;
