@@ -20,7 +20,10 @@
     
     padding-top: $padding-lg;
 }
-
+.p-t-xl {
+    
+    padding-top: $padding-xl;
+}
 //PADDING RIGHT
 
 .p-r-sm {
@@ -37,7 +40,10 @@
     
     padding-right: $padding-lg;
 }
-
+.p-r-xl {
+    
+    padding-right: $padding-xl;
+}
 //PADDING BOTTOM
 
 .p-b-sm {
@@ -58,7 +64,9 @@
     
     padding-bottom: $padding-xl;
 }
-
+.p-b-95 {
+    padding-bottom: 95px;    
+}
 //PADDING LEFT
 
 .p-l-sm {

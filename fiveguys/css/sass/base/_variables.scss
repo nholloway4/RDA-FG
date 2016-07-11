@@ -32,7 +32,7 @@ $helvetica: 'Helvetica';
 $helvetica-neue: 'Helvetica Neue';
 $helvetica-black: 'Helvetica Black';
 
-$font-thin:        100;
+$font-thin:         100;
 $font-light:        300;
 $font-normal:       400;
 $font-semibold:     600;
@@ -101,6 +101,7 @@ $breakpoint-xs:	            480px; // uses max-width for mobile
 $breakpoint-sm:             640px;
 $breakpoint-xslandscape:    668px;
 $breakpoint-md:	            940px;
+$breakpoint-mdplus:         1024px;
 $breakpoint-lg:	            1280px;
 $breakpoint-smplus:	        768px;
 
