@@ -1127,6 +1127,26 @@ body {
 }
 .fanatic-grid ul li img {
   max-width: 100%;
+  width: 100%;
+}
+
+.fanatic-grid-row ul {
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+}
+.fanatic-grid-row ul li img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.fanatic-tagline {
+  text-align: center;
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 35%;
+  color: #fff;
 }
 
 /* -----------------------------------------------------------------------------
@@ -1799,6 +1819,10 @@ body.has-active-menu {
 
   .content-wrapper p {
     margin: 8% 15%;
+  }
+
+  .fanatic-promo {
+    flex-direction: column;
   }
 }
 @media (max-width: 1024px) {
@@ -2565,6 +2589,11 @@ footer .social-media-icons ul li {
 footer .social-media-icons ul li a {
   font-size: 40px;
   color: #fff;
+}
+
+.hideFooter {
+  bottom: -150px;
+  opacity: 0;
 }
 
 @media all and (max-width: 480px) {

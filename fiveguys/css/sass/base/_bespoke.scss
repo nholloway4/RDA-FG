@@ -474,7 +474,6 @@ body {
     margin-bottom: 12%;
     
     a {
-     
         color: $gray-dark;
         text-decoration: underline;
     }
@@ -579,11 +578,41 @@ body {
             
             img {
                 max-width: 100%;
+                width: 100%;
             }
         }
     }    
 }
 
+.fanatic-grid-row {
+ 
+    ul {
+        
+        margin: 0 5%;
+        display: flex;
+        justify-content: center;        
+        
+        li {
+            
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        
+      
+    }
+}
+
+.fanatic-tagline {
+
+    text-align: $align-center;
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: 35%;
+    color: $white;
+}  
 /* -----------------------------------------------------------------------------
 
   WRAPPER OBJECT
@@ -1297,6 +1326,11 @@ body.has-active-menu {
          
             margin: 8% 15%;
         }
+    }
+    
+    .fanatic-promo {
+        
+        flex-direction: column;
     }
 }
 
