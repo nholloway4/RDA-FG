@@ -825,13 +825,13 @@ body {
   padding: 0px 150px 0px 0px;
 }
 
-.req-list {
+.standard-list {
   margin-bottom: 70px;
 }
-.req-list ul {
+.standard-list ul {
   text-align: left;
 }
-.req-list ul li {
+.standard-list ul li {
   font-size: 19px;
   padding: 15px 0;
 }
@@ -1174,11 +1174,85 @@ body {
   padding-top: 90px;
 }
 
-.story-content {
+.story-wrapper {
+  margin: 0 10%;
+}
+.story-wrapper .story-content {
   padding: 120px 0px;
 }
-.story-content p {
+.story-wrapper .story-content p {
+  margin: 0 28%;
   font-size: 18px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.story-wrapper .story-content .timeline-left {
+  flex: 2.5;
+}
+.story-wrapper .story-content .timeline-left p {
+  margin: 2% 25% 4% 15%;
+  font-size: 18px;
+  text-align: left;
+}
+.story-wrapper .story-content .timeline-left h2 {
+  font-family: "Helvetica Neue";
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.story-wrapper .story-content .timeline-left .facts {
+  margin: 0 30% 0 15%;
+}
+.story-wrapper .story-content .timeline-right {
+  flex: 1;
+}
+.story-wrapper .story-content .timeline-right p {
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+.story-wrapper .story-content .timeline-right h3 {
+  font-family: "Helvetica Neue";
+  font-weight: 600;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.timeline {
+  height: 100%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+.timeline .tml-line {
+  border-left: 1px dashed #cf1e27;
+}
+.timeline .tml-line:last-child {
+  border-left: 3px solid transparent;
+  height: 2rem;
+}
+.timeline .tml-content {
+  transform: translate(0, -2rem);
+  padding: 1.5rem;
+}
+.timeline .tml-content::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 4px solid #cf1e27;
+  position: absolute;
+  transform: translate(-2rem, 0.5rem);
+}
+.timeline .tml-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Helvetica Neue";
+  margin: 0;
+}
+.timeline .tml-content p {
+  font-size: 18px;
+  margin: 0;
 }
 
 /* -----------------------------------------------------------------------------
@@ -1855,6 +1929,22 @@ body.has-active-menu {
 
   .fanatic-promo {
     flex-direction: column;
+  }
+
+  .story-wrapper {
+    margin: 0;
+  }
+  .story-wrapper .story-content {
+    flex-direction: column;
+  }
+  .story-wrapper .story-content p {
+    margin: 0 10%;
+  }
+  .story-wrapper .story-content .timeline-left p {
+    margin: 2% 10% 4% 15%;
+  }
+  .story-wrapper .story-content .timeline-left .facts {
+    margin: 0 0 0 15%;
   }
 }
 @media (max-width: 1024px) {
