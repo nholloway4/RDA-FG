@@ -1215,6 +1215,7 @@ body {
   font-weight: 600;
   font-size: 21px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .timeline {
@@ -1941,10 +1942,13 @@ body.has-active-menu {
     margin: 0 10%;
   }
   .story-wrapper .story-content .timeline-left p {
-    margin: 2% 10% 4% 15%;
+    margin: 2% 8% 4% 8%;
   }
   .story-wrapper .story-content .timeline-left .facts {
-    margin: 0 0 0 15%;
+    margin: 0 4% 0 8%;
+  }
+  .story-wrapper .story-content .timeline-right {
+    margin: 0 0 0 8%;
   }
 }
 @media (max-width: 1024px) {

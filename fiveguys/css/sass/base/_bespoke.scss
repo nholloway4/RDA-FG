@@ -704,6 +704,7 @@ body {
                 font-weight: $font-semibold;    
                 font-size: $font-size-21;
                 text-transform: uppercase;
+                text-align: center;
             }
         }    
     }
@@ -1495,13 +1496,18 @@ body.has-active-menu {
                 
                 p {
                  
-                    margin: 2% 10% 4% 15%;
+                    margin: 2% 8% 4% 8%;
                 }
                 
                 .facts {
                  
-                    margin: 0 0 0 15%;
+                    margin: 0 4% 0 8%;
                 }
+            }
+            
+            .timeline-right {
+             
+                margin: 0 0 0 8%;
             }
         }
     }
