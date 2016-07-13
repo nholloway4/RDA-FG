@@ -1609,6 +1609,34 @@ body.has-active-menu {
             }
         }
     }
+    
+    .menu-list {
+     
+        ul {
+         
+            display: block;
+            margin-left: 12%;
+            text-align: $align-left;
+        }
+    }
+    
+    .flex-direction {
+     
+        display: inherit;
+    }
+    
+    .menu-bg {
+        
+        img {
+            height: 600px;
+            object-fit: cover;
+        }
+        .content {
+            left: 2%;
+            right: 2%;
+            top: 0%;
+        }
+    }
 }
 
 

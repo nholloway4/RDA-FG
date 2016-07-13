@@ -2036,6 +2036,26 @@ body.has-active-menu {
   .story-wrapper .story-content .timeline-right {
     margin: 0 0 0 8%;
   }
+
+  .menu-list ul {
+    display: block;
+    margin-left: 12%;
+    text-align: left;
+  }
+
+  .flex-direction {
+    display: inherit;
+  }
+
+  .menu-bg img {
+    height: 600px;
+    object-fit: cover;
+  }
+  .menu-bg .content {
+    left: 2%;
+    right: 2%;
+    top: 0%;
+  }
 }
 @media (max-width: 1024px) {
   .content-right {
