@@ -411,6 +411,11 @@ body {
         
     }
     
+    h4 {
+        font-weight: $font-semibold;
+        font-size: $font-size-14;
+    }
+    
     .apply {
      
         display: flex;
@@ -445,10 +450,7 @@ body {
     }
     
     .promo-tagline {
-     
-        //position: absolute;
-        //bottom: 20px;
-        //left: 30%;
+
         text-align: $align-center;
         position: absolute;
         left: 18%;
@@ -507,6 +509,23 @@ body {
     color: $gray-dark;
     font-size: $font-size-12;
     text-decoration: underline;
+}
+
+.reference-link {
+    
+    padding: $padding-lg;
+    
+    font-size: $font-size-12;
+    
+    a {
+        color: $gray-dark;
+        padding: 15px 5px;
+        text-decoration: underline;
+    }
+    
+    span {
+       font-size: $font-size-12; 
+    }
 }
 
 //FANATICS 
@@ -610,7 +629,7 @@ body {
 
 //STORY
 
-.hero-bg {
+.hero-bg, .menu-bg {
  
     img {
         background-size: cover;
@@ -753,6 +772,48 @@ body {
 	}
 }
 
+//MENU
+
+.menu-list {
+ 
+    h4 {
+        font-size: $font-size-14;
+        font-weight: $font-semibold;
+    }
+    
+    ul {
+     
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 2px;
+        
+        li {
+            
+            padding: 0 5px;
+            
+            &:before {
+                
+                font-size: 6px;
+                padding-right: 10px;
+                font-family: 'FontAwesome';
+                content: "\f111";
+                position: relative;
+                bottom: 2px;
+                
+                &:first-child {
+                }
+            }            
+            
+            &:after {
+                
+                list-style: disc;
+            }
+        }
+    }
+}
+
+.fries 
 
 /* -----------------------------------------------------------------------------
 
