@@ -1866,6 +1866,31 @@ body.has-active-menu {
     MEDIA QUERIES 
 ===================================================================*/
 @media (max-width: 480px) {
+  .hero-bg img {
+    height: 600px;
+    object-fit: cover;
+  }
+  .hero-bg .content {
+    left: 2%;
+    right: 2%;
+    top: 0%;
+    bottom: 25%;
+  }
+  .hero-bg .content .scroll {
+    padding-top: 30px;
+  }
+
+  .fanatics-bg img {
+    height: 600px;
+    object-fit: cover;
+  }
+  .fanatics-bg .content {
+    left: 2%;
+    right: 2%;
+    top: 0%;
+    bottom: 25%;
+  }
+
   .contact-welcome {
     margin: 15% 0;
   }

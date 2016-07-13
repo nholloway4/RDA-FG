@@ -607,6 +607,7 @@ body {
         margin: 0 5%;
     }
 }
+
 //STORY
 
 .hero-bg {
@@ -1344,13 +1345,50 @@ body.has-active-menu {
   }
 }
 
-
         
 /*==================================================================
     MEDIA QUERIES 
 ===================================================================*/
 
 @media (max-width: $breakpoint-xs) {
+
+    .hero-bg {
+ 
+        img {
+            height: 600px;
+            object-fit: cover;
+        }
+        
+        .content {
+         
+            left: 2%;
+            right: 2%;
+            top: 0%;
+            bottom: 25%;
+            
+            .scroll {
+             
+                padding-top: $padding-xl;
+            }
+        }
+    }
+    
+    .fanatics-bg {
+     
+        img {
+            
+            height: 600px;
+            object-fit: cover;
+        }
+        
+        .content {
+         
+            left: 2%;
+            right: 2%;
+            top: 0%;
+            bottom: 25%; 
+        }
+    }
     
     .contact-welcome {
         margin: 15% 0;
