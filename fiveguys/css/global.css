@@ -2178,6 +2178,7 @@ body.has-active-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 272px;
 }
 
 .location-icon {
