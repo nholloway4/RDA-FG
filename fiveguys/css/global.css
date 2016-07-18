@@ -641,7 +641,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-device-width: 1024px) {
   #desktop-refinement {
     display: none;
   }
@@ -1097,7 +1097,6 @@ body {
 }
 
 .reference-link {
-  padding: 15px;
   font-size: 12px;
 }
 .reference-link a {
@@ -1909,7 +1908,7 @@ body.has-active-menu {
 /*==================================================================
     MEDIA QUERIES 
 ===================================================================*/
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-device-width: 1024px) {
   .hero-bg img {
     height: 600px;
     object-fit: cover;
@@ -2055,6 +2054,18 @@ body.has-active-menu {
   .menu-bg .content {
     left: 2%;
     right: 2%;
+    top: 0%;
+  }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .hero-bg .content {
+    top: 10%;
+    left: 10%;
+    right: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-bg .content {
     top: 0%;
   }
 }
@@ -2311,7 +2322,7 @@ body.has-active-menu {
   transition-delay: 0s, 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-device-width: 1024px) {
   #global-nav {
     display: none;
   }
@@ -2460,7 +2471,7 @@ button:visited {
   padding: 6px 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-device-width: 1024px) {
   .btn-hero-cta {
     padding: 0.5em 1em;
   }
@@ -2695,7 +2706,7 @@ button:visited {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   body {
     height: 50px;
     margin-top: 50px;
@@ -2813,6 +2824,19 @@ button:visited {
   }
   .social-footer ul li:last-child {
     border-bottom: 0;
+  }
+}
+/*@media (max-width: $breakpoint-mdplus) and (orientation: landscape) { */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: portrait) {
+  .home-element-container .cta-join-crew {
+    height: 535px;
+    display: inherit;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .home-element-container .cta-join-crew {
+    height: 535px;
+    display: inherit;
   }
 }
 /*==================================================================
@@ -3429,7 +3453,7 @@ input[type="text"] {
   bottom: inherit;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-device-width: 1024px) {
   .fg-select {
     font-family: "Helvetica Neue";
     font-size: 14px;

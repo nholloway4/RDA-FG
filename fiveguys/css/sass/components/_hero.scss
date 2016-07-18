@@ -314,7 +314,7 @@
 }
 //MEDIA QUERIES
 
-@media (max-width: $breakpoint-smplus) {
+@media only screen and (max-device-width: $breakpoint-smplus) /*and (max-device-width: 1020px)*/ {
     
     body {
         height: $navbar-height-mobile;
@@ -487,4 +487,29 @@
             }            
         }
     }    
+}
+
+/*@media (max-width: $breakpoint-mdplus) and (orientation: landscape) { */
+@media all and (device-width: $breakpoint-smplus) and (device-height: $breakpoint-mdplus) and (orientation:portrait) {    
+    
+    .home-element-container {
+
+        .cta-join-crew {
+            
+            //height: 535px;
+            display: inherit;
+
+        }
+    }
+}
+
+@media all and (device-width: $breakpoint-mdplus) and (device-height: $breakpoint-smplus) and (orientation:landscape) {    
+    
+    .home-element-container {
+
+        .cta-join-crew {
+            
+            height: 535px;
+        }
+    }
 }

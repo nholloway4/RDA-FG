@@ -98,7 +98,7 @@
     display: none;
 }
 
-@media (max-width: $breakpoint-smplus) {
+@media (max-width: $breakpoint-smplus) and (max-device-width: $breakpoint-mdplus) {
     
     #desktop-refinement {
      

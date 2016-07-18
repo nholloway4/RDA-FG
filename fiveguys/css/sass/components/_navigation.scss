@@ -335,7 +335,7 @@
 
 //MEDIA QUERIES
 
-@media (max-width: $breakpoint-smplus) {
+@media (max-width: $breakpoint-smplus) and (max-device-width: $breakpoint-mdplus) {
     
     #global-nav {
      

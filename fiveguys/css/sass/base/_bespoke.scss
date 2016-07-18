@@ -514,7 +514,7 @@ body {
 
 .reference-link {
     
-    padding: $padding-lg;
+    //padding: $padding-lg;
     
     font-size: $font-size-12;
     
@@ -1412,7 +1412,7 @@ body.has-active-menu {
     MEDIA QUERIES 
 ===================================================================*/
 
-@media (max-width: $breakpoint-smplus) {
+@media (max-width: $breakpoint-smplus) and (max-device-width: $breakpoint-mdplus) {
 
     .hero-bg {
  
@@ -1640,7 +1640,29 @@ body.has-active-menu {
     }
 }
 
+@media (max-width: $breakpoint-smplus) and (orientation: portrait) { 
+    
+    .hero-bg {
+        
+        .content {
+        
+            top: 10%;
+            left: 10%;
+            right: 10%;
+        }
+    }
+}
 
+@media (max-width: $breakpoint-xs) { 
+    
+    .hero-bg {
+        
+        .content {
+        
+            top: 0%;
+        }
+    }
+}
 @media (max-width: $breakpoint-mdplus) { 
     
     .content-right {
