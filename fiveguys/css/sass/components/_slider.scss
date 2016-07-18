@@ -288,6 +288,7 @@ html[xmlns] .flexslider .slides {
 @media screen and (max-width: $breakpoint-smplus) {
     .flexslider .slides img {
         height: 400px;
+        object-fit: cover;
         -moz-user-select: none;
     }
 }

@@ -362,8 +362,18 @@
             height: 375px; 
             background-position: center;
             
+            .hero-align {
+             
+                bottom: 80px;
+            }
+            
             .hero-secondary-text-bold {
-                left: 40px;
+                //left: 40px;
+                position: initial;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: $align-center
             }        
         }
         

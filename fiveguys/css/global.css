@@ -2730,8 +2730,15 @@ button:visited {
     height: 375px;
     background-position: center;
   }
+  .home-element-container .cta-join-crew .hero-align {
+    bottom: 80px;
+  }
   .home-element-container .cta-join-crew .hero-secondary-text-bold {
-    left: 40px;
+    position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .home-element-container .cta-mobile-wrapper {
     height: auto;
@@ -3171,6 +3178,7 @@ html[xmlns] .flexslider .slides {
 @media screen and (max-width: 768px) {
   .flexslider .slides img {
     height: 400px;
+    object-fit: cover;
     -moz-user-select: none;
   }
 }
