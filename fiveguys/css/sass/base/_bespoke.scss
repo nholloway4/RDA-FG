@@ -445,6 +445,7 @@ body {
             
             img {
                 max-width: 100%;
+                width: 100%;
             }
         }
     }
@@ -1411,7 +1412,7 @@ body.has-active-menu {
     MEDIA QUERIES 
 ===================================================================*/
 
-@media (max-width: $breakpoint-xs) {
+@media (max-width: $breakpoint-smplus) {
 
     .hero-bg {
  

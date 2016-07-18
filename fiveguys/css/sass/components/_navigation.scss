@@ -335,7 +335,7 @@
 
 //MEDIA QUERIES
 
-@media (max-width: $breakpoint-xs) {
+@media (max-width: $breakpoint-smplus) {
     
     #global-nav {
      
@@ -468,7 +468,7 @@
 }
 
 
-@media (min-width: $breakpoint-xs) {
+@media (min-width: $breakpoint-smplus) {
 
     .hide-mobile-nav {
      
