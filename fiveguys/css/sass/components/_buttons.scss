@@ -75,7 +75,7 @@ button {
     padding: 6px 12px;
 }
 
-@media (max-width: $breakpoint-smplus) and (max-device-width: $breakpoint-mdplus) {
+@media (max-width: $breakpoint-smplus) and (max-width: $breakpoint-mdplus) {
     
     .btn-hero-cta {
         

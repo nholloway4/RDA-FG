@@ -335,12 +335,7 @@
 
 //MEDIA QUERIES
 
-@media (max-width: $breakpoint-smplus) and (max-device-width: $breakpoint-mdplus) {
-    
-    #global-nav {
-     
-        display: none;
-    }
+@media (max-width: $breakpoint-smplus) and (max-width: $breakpoint-mdplus) {
     
     .drop-menu {
         margin-left: 50px;
@@ -465,6 +460,14 @@
      
         padding-bottom: $padding-xl;
     }
+}
+
+@media (max-width: $breakpoint-smplus) {
+    
+    #global-nav {
+     
+        display: none;
+    }    
 }
 
 

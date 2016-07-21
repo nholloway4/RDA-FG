@@ -104,19 +104,19 @@ $(document).ready(function() {
             
         } else if (openSesame(toggle) === true) {
             slideTop.close();
-            $( "#global-nav" ).show();
+            $( "#global-nav" ).hide();
             
             resize();
         }
     });
     
     //HIDE GLOBAL NAV
-    function resize() {
+    /*function resize() {
         if ($(window).width() < 480) {
          $('#global-nav').css('display', 'none');
         }
         else {$('#global-nav').css('display', 'block');}
-    } 
+    }*/ 
     
     //TEST ARRAY FOR AUTOCOMPLERE
     $(function() {

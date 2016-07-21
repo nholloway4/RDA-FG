@@ -641,7 +641,38 @@ ul {
   display: none;
 }
 
-@media (max-width: 768px) and (max-device-width: 1024px) {
+@media (max-width: 768px) and (max-width: 1024px) {
+  #desktop-refinement {
+    display: none;
+  }
+
+  .mobile-refinement {
+    display: block;
+  }
+
+  .refine-accordion-wrapper {
+    border-top: 0px;
+  }
+
+  .refine-accordion-btn {
+    font-size: 14px;
+    padding-right: 40px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 0;
+  }
+
+  .refine-accordion-content {
+    font-size: 14px;
+    padding: 25px 15px 25px 15px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 15px 10px;
+  }
+}
+@media (max-width: 768px) {
   #desktop-refinement {
     display: none;
   }
@@ -1909,7 +1940,7 @@ body.has-active-menu {
 /*==================================================================
     MEDIA QUERIES 
 ===================================================================*/
-@media (max-width: 768px) and (max-device-width: 1024px) {
+@media (max-width: 768px) and (max-width: 1024px) {
   .hero-bg img {
     height: 600px;
     object-fit: cover;
@@ -2323,11 +2354,7 @@ body.has-active-menu {
   transition-delay: 0s, 0.3s;
 }
 
-@media (max-width: 768px) and (max-device-width: 1024px) {
-  #global-nav {
-    display: none;
-  }
-
+@media (max-width: 768px) and (max-width: 1024px) {
   .drop-menu {
     margin-left: 50px;
     margin-top: 0px;
@@ -2411,6 +2438,11 @@ body.has-active-menu {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 768px) {
+  #global-nav {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .hide-mobile-nav {
     display: none;
@@ -2472,7 +2504,7 @@ button:visited {
   padding: 6px 12px;
 }
 
-@media (max-width: 768px) and (max-device-width: 1024px) {
+@media (max-width: 768px) and (max-width: 1024px) {
   .btn-hero-cta {
     padding: 0.5em 1em;
   }
@@ -2707,7 +2739,7 @@ button:visited {
   color: #fff;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     height: 50px;
     margin-top: 50px;
@@ -3452,7 +3484,7 @@ input[type="text"] {
   bottom: inherit;
 }
 
-@media (max-width: 768px) and (max-device-width: 1024px) {
+@media (max-width: 768px) and (max-width: 1024px) {
   .fg-select {
     font-family: "Helvetica Neue";
     font-size: 14px;
