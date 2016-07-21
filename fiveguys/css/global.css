@@ -885,7 +885,8 @@ body {
 }
 
 .location-results {
-  height: 825px;
+  height: 680px;
+  overflow-y: scroll;
 }
 .location-results .result {
   font-family: "Helvetica";
@@ -2827,16 +2828,14 @@ button:visited {
   }
 }
 /*@media (max-width: $breakpoint-mdplus) and (orientation: landscape) { */
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: portrait) {
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
   .home-element-container .cta-join-crew {
-    height: 535px;
     display: inherit;
   }
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
   .home-element-container .cta-join-crew {
     height: 535px;
-    display: inherit;
   }
 }
 /*==================================================================

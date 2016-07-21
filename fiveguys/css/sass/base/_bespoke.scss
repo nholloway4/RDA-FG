@@ -224,7 +224,8 @@ body {
 
 .location-results {
  
-    height: 825px;
+    height: 680px;
+    overflow-y: scroll;
     
     .result {
      
