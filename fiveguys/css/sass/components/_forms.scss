@@ -17,7 +17,9 @@
     font-size: $font-size-18; 
     padding-left: 15px;    
 }
-
+select::-ms-expand {
+    display: none;
+}
 .fg-select {
     
     font-family: $helvetica-neue;
@@ -35,6 +37,21 @@
     -moz-appearance:none;
     appearance:none;   
 }
+.arrow {
+  position: relative;
+    
+    &:after {
+      font-family: 'FontAwesome';    
+      content: '\f078';
+      font-size: $font-size-24;
+      color: $gray;
+      right: 20px;
+      top: 10px;
+      position: absolute;
+      pointer-events: none;        
+    }
+}
+
 
 .contact-select {
     
@@ -53,7 +70,7 @@
     -moz-appearance:none;
     appearance:none;
     cursor: pointer;
-    
+
     &:after {
         
     }

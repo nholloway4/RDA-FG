@@ -3448,6 +3448,10 @@ html[xmlns] .flexslider .slides {
   padding-left: 15px;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 .fg-select {
   font-family: "Helvetica Neue";
   font-size: 18px;
@@ -3463,6 +3467,20 @@ html[xmlns] .flexslider .slides {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow:after {
+  font-family: 'FontAwesome';
+  content: '\f078';
+  font-size: 24px;
+  color: #555555;
+  right: 20px;
+  top: 10px;
+  position: absolute;
+  pointer-events: none;
 }
 
 .contact-select {
