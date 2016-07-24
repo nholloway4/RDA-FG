@@ -64,8 +64,10 @@
         //background: $gray-darker;
         height: 550px;
         //display: flex; 
+        -webkit-justify-content: center; 
+        -webkit-align-items: flex-end;
         justify-content: center; 
-        align-items: flex-end;
+        align-items: flex-end;        
         //padding: $padding-xl;
         
         .hero-secondary-text-bold {
@@ -157,6 +159,8 @@
         background-position: $align-center;
         flex: 2.5;
         display: flex; 
+        -webkit-justify-content: center; 
+        -webkit-align-items: center;        
         justify-content: center; 
         align-items: center;
         text-align: center;        
@@ -198,8 +202,10 @@
         //background: $gray-darker;
         height: 550px;
         //display: flex; 
+        -webkit-justify-content: center; 
+        -webkit-align-items: flex-end;
         justify-content: center; 
-        align-items: flex-end;
+        align-items: flex-end;   
         //padding: $padding-xl;
         
         .hero-secondary-text-bold {
@@ -476,7 +482,6 @@
 
             flex-direction: column;
             li {
-                
                 border-right: 0;
                 border-bottom: 1px solid $gray-light;
 

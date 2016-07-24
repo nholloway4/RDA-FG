@@ -51,7 +51,8 @@
     -moz-border-radius:0px;
     -webkit-appearance:none;
     -moz-appearance:none;
-    appearance:none; 
+    appearance:none;
+    cursor: pointer;
     
     &:after {
         
@@ -277,8 +278,6 @@ input[type="text"] {
         width: 55%;
         position: inherit;
         margin: 0;
-        //bottom: 15px;  
-        //background-position: 205px -7px;
 
         &:after {
 
