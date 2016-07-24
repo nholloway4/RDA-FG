@@ -3060,11 +3060,6 @@ button:visited {
     display: inherit;
   }
 }
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
-  .home-element-container .cta-join-crew {
-    height: 535px;
-  }
-}
 /*==================================================================
     FOOTER 
 ===================================================================*/

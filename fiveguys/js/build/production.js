@@ -98,15 +98,25 @@ $(document).ready(function() {
         var openSesame = function(flag) {
             return (flag % 2 === 0) ? true : false;
         };
+        
         if (openSesame(toggle) === false) {
             slideTop.open();
-            $( "#global-nav" ).hide();
+            //$( "#global-nav" ).hide();
             
         } else if (openSesame(toggle) === true) {
             slideTop.close();
-            $( "#global-nav" ).hide();
-            
-            resize();
+            //$( "#global-nav" ).show();
+        }
+        
+        if ($(window).width() > 770) {
+            if (openSesame(toggle) === false) {
+                slideTop.open();
+                $( "#global-nav" ).hide();
+
+            } else if (openSesame(toggle) === true) {
+                slideTop.close();
+                $( "#global-nav" ).show();
+            }        
         }
     });
     
