@@ -1168,6 +1168,7 @@ body {
 }
 
 .reference-link {
+  padding-right: 15px;
   font-size: 12px;
 }
 .reference-link a {
@@ -2541,6 +2542,8 @@ body.has-active-menu {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    text-align: left;
     color: #555555;
     font-size: 14px;
   }
@@ -2567,6 +2570,10 @@ body.has-active-menu {
 @media (min-width: 768px) {
   .hide-mobile-nav {
     display: none;
+  }
+
+  .logo {
+    padding-left: 15px;
   }
 }
 button:visited {
@@ -3458,7 +3465,7 @@ select::-ms-expand {
   font-weight: 700;
   padding: 15px;
   height: inherit;
-  width: 50%;
+  width: 100%;
   position: relative;
   bottom: 15px;
   border-radius: 0;
@@ -3479,6 +3486,21 @@ select::-ms-expand {
   color: #555555;
   right: 20px;
   top: 10px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.drop-arrow {
+  position: relative;
+  width: 50%;
+}
+.drop-arrow:after {
+  font-family: 'FontAwesome';
+  content: '\f078';
+  font-size: 24px;
+  color: #555555;
+  right: 15px;
+  top: -5px;
   position: absolute;
   pointer-events: none;
 }
@@ -3700,12 +3722,28 @@ input[type="text"] {
     font-weight: 700;
     padding: 5px;
     height: inherit;
-    width: 55%;
+    width: 100%;
     position: inherit;
     margin: 0;
   }
   .fg-select:after {
     font-family: 'FontAwesome';
+  }
+
+  .drop-arrow {
+    position: relative;
+    width: 100%;
+    top: 15px;
+  }
+  .drop-arrow:after {
+    font-family: 'FontAwesome';
+    content: '\f078';
+    font-size: 18px;
+    color: #555555;
+    right: 15px;
+    top: -12px;
+    position: absolute;
+    pointer-events: none;
   }
 
   .search-box-wrapper {

@@ -27,7 +27,7 @@ select::-ms-expand {
     font-weight: $font-bold;
     padding: $padding-lg;
     height: inherit; 
-    width: 50%;
+    width: 100%;
     position: relative;
     bottom: 15px;  
     border-radius: 0;    
@@ -47,6 +47,22 @@ select::-ms-expand {
       color: $gray;
       right: 20px;
       top: 10px;
+      position: absolute;
+      pointer-events: none;        
+    }
+}
+
+.drop-arrow {
+  position: relative;
+  width: 50%;
+    
+    &:after {
+      font-family: 'FontAwesome';    
+      content: '\f078';
+      font-size: $font-size-24;
+      color: $gray;
+      right: 15px;
+      top: -5px;
       position: absolute;
       pointer-events: none;        
     }
@@ -292,7 +308,7 @@ input[type="text"] {
         font-weight: $font-bold;
         padding: $padding-sm;
         height: inherit; 
-        width: 55%;
+        width: 100%;
         position: inherit;
         margin: 0;
 
@@ -301,6 +317,23 @@ input[type="text"] {
             font-family: 'FontAwesome';
         }
     }
+    
+    .drop-arrow {
+        position: relative;
+        width: 100%;
+        top: 15px;
+
+        &:after {
+          font-family: 'FontAwesome';    
+          content: '\f078';
+          font-size: $font-size-18;
+          color: $gray;
+          right: 15px;
+          top: -12px;
+          position: absolute;
+          pointer-events: none;        
+        }
+    }    
     .search-box-wrapper {
      
         margin: 0;

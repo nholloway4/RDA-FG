@@ -434,6 +434,8 @@
         .items-left {
 
                 display: flex;
+                width: 100%;
+                text-align: $align-left;            
                 color: $gray;   
                 font-size: $font-size-14;                    
 
@@ -464,7 +466,7 @@
     #global-nav {
      
         display: none;
-    }    
+    }
 }
 
 
@@ -473,5 +475,9 @@
     .hide-mobile-nav {
      
         display: none;
+    }
+    .logo {
+        
+        padding-left: $padding-lg;
     }    
 }
