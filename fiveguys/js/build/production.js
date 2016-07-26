@@ -40,7 +40,9 @@ $(".c-hamburger--htx").on("click", function () {
     $(this).toggleClass("active");
 });
 
-
+$(function(){
+  $('select').selectric();
+});
 //Accordion
 
 $(document).ready(function() {
@@ -119,7 +121,7 @@ $(document).ready(function() {
             }        
         }
     });
-    
+        
     //HIDE GLOBAL NAV
     /*function resize() {
         if ($(window).width() < 480) {

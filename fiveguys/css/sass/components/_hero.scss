@@ -518,3 +518,17 @@
         }
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .home-element-container {
+
+        .cta-mobile-wrapper {
+            
+            .phone-wrap {
+             
+                //-webkit-flex: initial;
+                
+            }
+        }
+    }
+}

@@ -3480,8 +3480,6 @@ select::-ms-expand {
   position: relative;
 }
 .arrow:after {
-  font-family: 'FontAwesome';
-  content: '\f078';
   font-size: 24px;
   color: #555555;
   right: 20px;
@@ -3495,8 +3493,8 @@ select::-ms-expand {
   width: 50%;
 }
 .drop-arrow:after {
-  font-family: 'FontAwesome';
-  content: '\f078';
+  /*font-family: 'FontAwesome';    
+  content: '\f078';*/
   font-size: 24px;
   color: #555555;
   right: 15px;
@@ -3736,8 +3734,8 @@ input[type="text"] {
     top: 15px;
   }
   .drop-arrow:after {
-    font-family: 'FontAwesome';
-    content: '\f078';
+    /*font-family: 'FontAwesome';    
+    content: '\f078';*/
     font-size: 18px;
     color: #555555;
     right: 15px;

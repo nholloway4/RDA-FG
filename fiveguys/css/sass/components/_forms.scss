@@ -41,8 +41,8 @@ select::-ms-expand {
   position: relative;
     
     &:after {
-      font-family: 'FontAwesome';    
-      content: '\f078';
+      //font-family: 'FontAwesome';    
+      //content: '\f078';
       font-size: $font-size-24;
       color: $gray;
       right: 20px;
@@ -57,8 +57,8 @@ select::-ms-expand {
   width: 50%;
     
     &:after {
-      font-family: 'FontAwesome';    
-      content: '\f078';
+      /*font-family: 'FontAwesome';    
+      content: '\f078';*/
       font-size: $font-size-24;
       color: $gray;
       right: 15px;
@@ -291,8 +291,6 @@ input[type="text"] {
     transform: scaleX(-1);
 }
 
-
-
 .chevron-position-nav {
 @extend .chevron-position; 
     
@@ -324,8 +322,8 @@ input[type="text"] {
         top: 15px;
 
         &:after {
-          font-family: 'FontAwesome';    
-          content: '\f078';
+          /*font-family: 'FontAwesome';    
+          content: '\f078';*/
           font-size: $font-size-18;
           color: $gray;
           right: 15px;
