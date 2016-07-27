@@ -1154,6 +1154,11 @@ body {
 .press-coverage ul li h3 {
   font-size: 18px;
   font-family: "Helvetica Black";
+  text-transform: uppercase;
+}
+.press-coverage ul li a {
+  color: #000;
+  text-decoration: none;
 }
 .press-coverage ul li span {
   font-size: 12px;
@@ -2189,6 +2194,11 @@ body.has-active-menu {
     top: 10%;
     left: 10%;
     right: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .map-wrapper {
+    min-height: 250px;
   }
 }
 @media (max-width: 480px) {

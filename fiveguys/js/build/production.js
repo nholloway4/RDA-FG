@@ -40,9 +40,6 @@ $(".c-hamburger--htx").on("click", function () {
     $(this).toggleClass("active");
 });
 
-$(function(){
-  $('select').selectric();
-});
 //Accordion
 
 $(document).ready(function() {
@@ -173,7 +170,11 @@ $(document).ready(function() {
             }
         }
     }
-
+    
+ /*$(function(){
+  $('select').selectric();
+});*/ 
+    
     if (document.addEventListener) {
         document.addEventListener('DOMContentLoaded', function() {
             heightsEqualizer('.js-equal-height');
@@ -186,4 +187,5 @@ $(document).ready(function() {
     setTimeout(function () { // set 1 second timeout for having all fonts loaded
         heightsEqualizer('.js-equal-height');
     }, 1);   
+    
 });
