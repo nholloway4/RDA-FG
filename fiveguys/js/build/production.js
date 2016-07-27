@@ -40,6 +40,11 @@ $(".c-hamburger--htx").on("click", function () {
     $(this).toggleClass("active");
 });
 
+
+$(function(){
+  $('select').niceSelect();
+});
+
 //Accordion
 
 $(document).ready(function() {
@@ -170,10 +175,6 @@ $(document).ready(function() {
             }
         }
     }
-    
- /*$(function(){
-  $('select').selectric();
-});*/ 
     
     if (document.addEventListener) {
         document.addEventListener('DOMContentLoaded', function() {
