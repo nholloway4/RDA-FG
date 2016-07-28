@@ -125,17 +125,7 @@ $(document).ready(function() {
         source: availableTags
       });
     });
-    
-    //HOMEPAGE SLIDER
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });
-    
-    $(function() {
-        $('.item').matchHeight(options);
-    }); 
+
     
     function heightsEqualizer(selector) {
         var elements = document.querySelectorAll(selector),
